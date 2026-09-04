@@ -409,6 +409,33 @@ def active_backend() -> str:
     return _active_backend
 
 
+def warm() -> bool:
+    """Fire a trivial request so Ollama loads the model into memory ahead of
+    the first real classification.
+
+    Ollama unloads a model after config.OLLAMA_KEEP_ALIVE (default 5min) of
+    inactivity; on CPU that reload costs 10-15s, which reads as dead air on
+    a screen recording if it happens on the first real click. Call this on
+    page load (and optionally on an interval) to keep it warm. Best-effort:
+    never raises, never touches _active_backend's cached fallback state.
+    """
+    if active_backend() != "ollama":
+        return False
+    try:
+        payload = {"model": config.OLLAMA_MODEL, "stream": False,
+                   "messages": [{"role": "user", "content": "ping"}]}
+        req = urllib.request.Request(
+            f"{config.OLLAMA_HOST}/api/chat",
+            data=json.dumps(payload).encode("utf-8"),
+            headers={"Content-Type": "application/json"}, method="POST",
+        )
+        with urllib.request.urlopen(req, timeout=config.OLLAMA_TIMEOUT_S):
+            pass
+        return True
+    except Exception:  # noqa: BLE001 - best-effort warmup, never fatal
+        return False
+
+
 def classify(event: dict) -> Classification:
     """Classify one failed payment event; attach the heuristic's opinion too."""
     global _active_backend

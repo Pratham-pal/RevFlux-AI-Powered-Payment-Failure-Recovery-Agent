@@ -27,7 +27,7 @@ from fastapi.responses import FileResponse, JSONResponse  # noqa: E402
 from fastapi.staticfiles import StaticFiles  # noqa: E402
 from pydantic import BaseModel, Field  # noqa: E402
 
-from agent.classifier import active_backend  # noqa: E402
+from agent.classifier import active_backend, warm  # noqa: E402
 from web import razorpay_client  # noqa: E402
 from web.recovery_service import run_demo, scenario_list  # noqa: E402
 
@@ -71,6 +71,14 @@ def config_bootstrap() -> dict:
         "classifier_backend": active_backend(),
         "scenarios": scenario_list(),
     }
+
+
+@app.post("/api/warm")
+def warm_backend() -> dict:
+    """Best-effort: load the Ollama model into memory ahead of the first
+    real classification, so a screen recording doesn't sit on a cold-start
+    (10-15s on CPU) after the presenter hits "Attempt payment"."""
+    return {"warmed": warm(), "backend": active_backend()}
 
 
 # ---------------------------------------------------------------------------
