@@ -1,60 +1,195 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Payment Failure Recovery Agent</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Antic&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
 <script>
   tailwind.config = {
-    theme: { extend: { colors: {
-      ink: "#0a0e14", panel: "#121821", panel2: "#0f141c", line: "#1f2937",
-      brand: "#7c83ff", branddim: "#4c51bf",
-    }}}
+    darkMode: ["class"],
+    theme: { extend: {
+      fontFamily: {
+        sans: ["Antic", "ui-sans-serif", "sans-serif", "system-ui"],
+        mono: ["JetBrains Mono", "Courier New", "monospace"],
+      },
+      borderRadius: { DEFAULT: "var(--radius)" },
+      colors: {
+        background: "rgb(from var(--background) r g b / <alpha-value>)",
+        foreground: "rgb(from var(--foreground) r g b / <alpha-value>)",
+        card: "rgb(from var(--card) r g b / <alpha-value>)",
+        "card-foreground": "rgb(from var(--card-foreground) r g b / <alpha-value>)",
+        popover: "rgb(from var(--popover) r g b / <alpha-value>)",
+        "popover-foreground": "rgb(from var(--popover-foreground) r g b / <alpha-value>)",
+        primary: "rgb(from var(--primary) r g b / <alpha-value>)",
+        "primary-foreground": "rgb(from var(--primary-foreground) r g b / <alpha-value>)",
+        secondary: "rgb(from var(--secondary) r g b / <alpha-value>)",
+        "secondary-foreground": "rgb(from var(--secondary-foreground) r g b / <alpha-value>)",
+        muted: "rgb(from var(--muted) r g b / <alpha-value>)",
+        "muted-foreground": "rgb(from var(--muted-foreground) r g b / <alpha-value>)",
+        accent: "rgb(from var(--accent) r g b / <alpha-value>)",
+        "accent-foreground": "rgb(from var(--accent-foreground) r g b / <alpha-value>)",
+        destructive: "rgb(from var(--destructive) r g b / <alpha-value>)",
+        "destructive-foreground": "rgb(from var(--destructive-foreground) r g b / <alpha-value>)",
+        border: "rgb(from var(--border) r g b / <alpha-value>)",
+        input: "rgb(from var(--input) r g b / <alpha-value>)",
+        ring: "rgb(from var(--ring) r g b / <alpha-value>)",
+        "chart-1": "rgb(from var(--chart-1) r g b / <alpha-value>)",
+        "chart-2": "rgb(from var(--chart-2) r g b / <alpha-value>)",
+        "chart-3": "rgb(from var(--chart-3) r g b / <alpha-value>)",
+        "chart-4": "rgb(from var(--chart-4) r g b / <alpha-value>)",
+        "chart-5": "rgb(from var(--chart-5) r g b / <alpha-value>)",
+        sidebar: "rgb(from var(--sidebar) r g b / <alpha-value>)",
+      },
+    }}
   };
 </script>
 <style>
-  body { background: radial-gradient(1200px 600px at 20% -10%, #171e2e 0%, #0a0e14 55%) fixed; }
+  :root {
+    --card: #ffffff;
+    --ring: #7c9082;
+    --input: #ffffff;
+    --muted: #e8e6e1;
+    --accent: #bfc9bb;
+    --border: #e8e6e1;
+    --radius: 0.35rem;
+    --chart-1: #7c9082;
+    --chart-2: #a0aa88;
+    --chart-3: #8b9d83;
+    --chart-4: #6b7280;
+    --chart-5: #e8e6e1;
+    --popover: #ffffff;
+    --primary: #7c9082;
+    --sidebar: #fafaf8;
+    --spacing: 0.23rem;
+    --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+    --font-sans: 'Antic', ui-sans-serif, sans-serif, system-ui;
+    --secondary: #ced4bf;
+    --background: #f8f7f4;
+    --font-serif: Signifier, Georgia, serif;
+    --foreground: #1a1f2e;
+    --destructive: #c73e3a;
+    --shadow-blur: 2px;
+    --shadow-color: #1a1f2e;
+    --sidebar-ring: #7c9082;
+    --shadow-spread: 0px;
+    --letter-spacing: 0em;
+    --shadow-opacity: 0.04;
+    --sidebar-accent: #e8e6e1;
+    --sidebar-border: #e8e6e1;
+    --card-foreground: #1a1f2e;
+    --shadow-offset-x: 0px;
+    --shadow-offset-y: 1px;
+    --sidebar-primary: #7c9082;
+    --muted-foreground: #6b7280;
+    --accent-foreground: #1a1f2e;
+    --popover-foreground: #1a1f2e;
+    --primary-foreground: #ffffff;
+    --sidebar-foreground: #1a1f2e;
+    --secondary-foreground: #1a1f2e;
+    --destructive-foreground: #ffffff;
+    --sidebar-accent-foreground: #1a1f2e;
+    --sidebar-primary-foreground: #ffffff;
+  }
+  .dark {
+    --card: #121212;
+    --ring: #7c9082;
+    --input: #121212;
+    --muted: #1a1a1a;
+    --accent: #36443a;
+    --border: #2a2a2a;
+    --chart-1: #7c9082;
+    --chart-2: #a0aa88;
+    --chart-3: #8b9d83;
+    --chart-4: #6b7280;
+    --chart-5: #5a6b5e;
+    --popover: #121212;
+    --primary: #7c9082;
+    --sidebar: #0f0f0f;
+    --secondary: #1a1a1a;
+    --background: #0a0a0a;
+    --foreground: #f5f5f5;
+    --destructive: #ef4444;
+    --shadow-color: #000000;
+    --sidebar-ring: #7c9082;
+    --sidebar-accent: #1a1a1a;
+    --sidebar-border: #2a2a2a;
+    --card-foreground: #f5f5f5;
+    --sidebar-primary: #7c9082;
+    --muted-foreground: #a0a0a0;
+    --accent-foreground: #f5f5f5;
+    --popover-foreground: #f5f5f5;
+    --primary-foreground: #000000;
+    --sidebar-foreground: #f5f5f5;
+    --secondary-foreground: #f5f5f5;
+    --destructive-foreground: #ffffff;
+    --sidebar-accent-foreground: #f5f5f5;
+    --sidebar-primary-foreground: #ffffff;
+  }
+  body {
+    background:
+      radial-gradient(1200px 600px at 20% -10%, color-mix(in srgb, var(--primary) 7%, var(--background)) 0%, var(--background) 55%) fixed,
+      var(--background);
+    font-family: var(--font-sans);
+    letter-spacing: var(--letter-spacing);
+  }
   .stage { transition: border-color .3s, background .3s, opacity .3s; opacity: .45; }
-  .stage[data-state="active"] { opacity: 1; border-color: #7c83ff; box-shadow: 0 0 0 1px #7c83ff33, 0 0 30px -8px #7c83ff55; }
-  .stage[data-state="done"] { opacity: 1; border-color: #2b3648; }
-  .stage-dot { background: #334155; }
-  .stage[data-state="active"] .stage-dot { background: #7c83ff; animation: pulse 1.1s infinite; }
-  .stage[data-state="done"] .stage-dot { background: #34d399; }
-  @keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 #7c83ff66; } 50% { box-shadow: 0 0 0 6px #7c83ff00; } }
-  .connector { width: 2px; height: 18px; background: #2b3648; margin-left: 15px; }
-  .type-cursor::after { content: "▍"; color: #7c83ff; animation: blink 1s steps(1) infinite; }
+  .stage[data-state="active"] {
+    opacity: 1; border-color: var(--primary);
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--primary) 25%, transparent),
+                0 0 30px -8px color-mix(in srgb, var(--primary) 45%, transparent);
+  }
+  .stage[data-state="done"] { opacity: 1; border-color: var(--border); }
+  .stage-dot { background: var(--muted-foreground); opacity: .5; }
+  .stage[data-state="active"] .stage-dot { background: var(--primary); opacity: 1; animation: pulse 1.1s infinite; }
+  .stage[data-state="done"] .stage-dot { background: var(--chart-2); opacity: 1; }
+  @keyframes pulse {
+    0%,100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--primary) 40%, transparent); }
+    50% { box-shadow: 0 0 0 6px transparent; }
+  }
+  .connector { width: 2px; height: 18px; background: var(--border); margin-left: 15px; }
+  .type-cursor::after { content: "▍"; color: var(--primary); animation: blink 1s steps(1) infinite; }
   @keyframes blink { 50% { opacity: 0; } }
-  .bar-track { background: #1c2430; border-radius: 4px; overflow: hidden; }
-  .bar-fill { background: linear-gradient(90deg, #4c51bf, #7c83ff); height: 100%; transition: width .6s ease; }
-  .tabbtn[aria-selected="true"] { color: #fff; border-color: #7c83ff; }
+  .bar-track { background: var(--muted); border-radius: 4px; overflow: hidden; }
+  .bar-fill { background: linear-gradient(90deg, var(--chart-5), var(--primary)); height: 100%; transition: width .6s ease; }
+  .tabbtn[aria-selected="true"] { color: var(--foreground); border-color: var(--primary); }
   table.audit td, table.audit th { white-space: nowrap; }
   .fadein { animation: fade .35s ease both; }
   @keyframes fade { from { opacity: 0; transform: translateY(4px); } }
 </style>
 </head>
-<body class="text-slate-200 min-h-screen">
+<body class="text-foreground min-h-screen">
 
-<header class="border-b border-line/70 backdrop-blur sticky top-0 z-20 bg-ink/80">
-  <div class="max-w-6xl mx-auto px-5 py-3 flex items-center gap-3">
-    <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand to-branddim grid place-items-center font-bold text-white">R</div>
+<header class="border-b border-border/70 backdrop-blur sticky top-0 z-20 bg-background/80">
+  <div class="max-w-[1920px] mx-auto px-6 lg:px-10 py-3 flex items-center gap-3">
+    <div class="w-8 h-8 rounded bg-gradient-to-br from-primary to-[var(--chart-5)] grid place-items-center font-bold text-primary-foreground">R</div>
     <div class="leading-tight">
-      <div class="font-semibold text-white">Payment Failure Recovery Agent</div>
-      <div class="text-xs text-slate-400">Razorpay AI Buildathon 2026 · Track 3 — AI Revenue Recovery</div>
+      <div class="font-semibold text-foreground">Payment Failure Recovery Agent</div>
+      <div class="text-xs text-muted-foreground">Razorpay AI Buildathon 2026 · Track 3 — AI Revenue Recovery</div>
     </div>
-    <div class="ml-auto flex items-center gap-2 text-xs">
-      <span id="backend-badge" class="px-2 py-1 rounded-md border border-line bg-panel text-slate-300">backend: …</span>
-      <span id="rzp-badge" class="px-2 py-1 rounded-md border border-line bg-panel text-slate-400">checkout: …</span>
+    <div class="ml-auto flex items-center gap-2 text-xs font-mono">
+      <span id="backend-badge" class="px-2 py-1 rounded border border-border bg-card text-muted-foreground">backend: …</span>
+      <span id="rzp-badge" class="px-2 py-1 rounded border border-border bg-card text-muted-foreground">checkout: …</span>
     </div>
   </div>
-  <nav class="max-w-6xl mx-auto px-5 flex gap-6 text-sm text-slate-400">
+  <nav class="max-w-[1920px] mx-auto px-6 lg:px-10 flex gap-6 text-sm text-muted-foreground">
     <button class="tabbtn py-2 border-b-2 border-transparent" data-tab="demo" aria-selected="true">Live Demo</button>
     <button class="tabbtn py-2 border-b-2 border-transparent" data-tab="batch" aria-selected="false">Batch · 200 payments</button>
     <button class="tabbtn py-2 border-b-2 border-transparent" data-tab="arch" aria-selected="false">Architecture</button>
   </nav>
+  <div id="fallback-banner" class="hidden bg-destructive/15 border-t border-destructive/40 text-destructive text-xs font-mono">
+    <div class="max-w-[1920px] mx-auto px-6 lg:px-10 py-1.5">
+      ⚠ classifier backend degraded to the offline heuristic mid-session (a real backend call failed) — every classification below is the flat lookup, not LLM judgment, until the server is restarted.
+    </div>
+  </div>
 </header>
 
-<main class="max-w-6xl mx-auto px-5 py-6">
+<main class="max-w-[1920px] mx-auto px-6 lg:px-10 py-6">
 
 <!-- ================= LIVE DEMO ================= -->
 <section id="tab-demo">
@@ -62,35 +197,35 @@
 
     <!-- checkout -->
     <div class="lg:sticky lg:top-28 self-start space-y-4">
-      <div class="rounded-xl border border-line bg-panel p-4">
-        <div class="text-xs uppercase tracking-wide text-slate-500 mb-2">Merchant checkout</div>
-        <div class="font-semibold text-white">PropelFit — Annual Membership</div>
-        <div class="text-sm text-slate-400 mb-3">Billed once · access for 12 months</div>
+      <div class="rounded border border-border bg-card p-4">
+        <div class="text-xs uppercase tracking-wide text-muted-foreground mb-2">Merchant checkout</div>
+        <div class="font-semibold text-foreground">PropelFit — Annual Membership</div>
+        <div class="text-sm text-muted-foreground mb-3">Billed once · access for 12 months</div>
 
-        <label class="block text-xs text-slate-400 mb-1">Amount (INR)</label>
+        <label class="block text-xs text-muted-foreground mb-1">Amount (INR)</label>
         <input id="amount" type="number" value="4999" min="1"
-               class="w-full bg-panel2 border border-line rounded-lg px-3 py-2 mb-3 text-white" />
+               class="w-full font-mono bg-input border border-border rounded px-3 py-2 mb-3 text-foreground" />
 
-        <label class="block text-xs text-slate-400 mb-1">Simulate this failure</label>
-        <select id="scenario" class="w-full bg-panel2 border border-line rounded-lg px-3 py-2 mb-1 text-white"></select>
-        <div id="scenario-blurb" class="text-xs text-slate-500 mb-3 min-h-[2rem]"></div>
+        <label class="block text-xs text-muted-foreground mb-1">Simulate this failure</label>
+        <select id="scenario" class="w-full bg-input border border-border rounded px-3 py-2 mb-1 text-foreground"></select>
+        <div id="scenario-blurb" class="text-xs text-muted-foreground mb-3 min-h-[2rem]"></div>
 
-        <label class="block text-xs text-slate-400 mb-1">Customer already retried</label>
+        <label class="block text-xs text-muted-foreground mb-1">Customer already retried</label>
         <div id="retrybtns" class="flex gap-2 mb-4">
-          <button data-n="0" class="retrybtn flex-1 border border-line rounded-lg py-1.5 text-sm">0</button>
-          <button data-n="1" class="retrybtn flex-1 border border-line rounded-lg py-1.5 text-sm">1</button>
-          <button data-n="2" class="retrybtn flex-1 border border-line rounded-lg py-1.5 text-sm">2</button>
-          <button data-n="3" class="retrybtn flex-1 border border-line rounded-lg py-1.5 text-sm">3</button>
+          <button data-n="0" class="retrybtn flex-1 font-mono border border-border rounded py-1.5 text-sm">0</button>
+          <button data-n="1" class="retrybtn flex-1 font-mono border border-border rounded py-1.5 text-sm">1</button>
+          <button data-n="2" class="retrybtn flex-1 font-mono border border-border rounded py-1.5 text-sm">2</button>
+          <button data-n="3" class="retrybtn flex-1 font-mono border border-border rounded py-1.5 text-sm">3</button>
         </div>
 
-        <button id="pay" class="w-full bg-gradient-to-br from-brand to-branddim hover:opacity-90 text-white font-semibold rounded-lg py-2.5">
+        <button id="pay" class="w-full bg-gradient-to-br from-primary to-[var(--chart-5)] hover:opacity-90 text-primary-foreground font-semibold rounded py-2.5">
           Attempt payment
         </button>
-        <div id="pay-note" class="text-[11px] text-slate-500 mt-2"></div>
+        <div id="pay-note" class="text-[11px] text-muted-foreground mt-2"></div>
       </div>
 
-      <div class="rounded-xl border border-line bg-panel p-4 text-xs text-slate-400 space-y-1">
-        <div class="text-slate-300 font-medium">What's real vs simulated</div>
+      <div class="rounded border border-border bg-card p-4 text-xs text-muted-foreground space-y-1">
+        <div class="text-foreground font-medium">What's real vs simulated</div>
         <div>✓ Razorpay test-mode checkout &amp; payment attempt</div>
         <div>✓ Classifier, policy engine, every guardrail</div>
         <div>~ The <em>failure reason</em> (test mode's own failure is generic)</div>
@@ -100,103 +235,103 @@
 
     <!-- pipeline -->
     <div>
-      <div id="empty-state" class="rounded-xl border border-dashed border-line bg-panel/40 p-10 text-center text-slate-500">
-        Pick a failure scenario and hit <span class="text-slate-300">Attempt payment</span>.<br/>
+      <div id="empty-state" class="rounded border border-dashed border-border bg-card/40 p-10 text-center text-muted-foreground">
+        Pick a failure scenario and hit <span class="text-foreground">Attempt payment</span>.<br/>
         Watch the failed transaction travel through the recovery pipeline.
       </div>
 
       <div id="pipeline" class="hidden space-y-0">
         <!-- 1 -->
-        <div class="stage rounded-xl border border-line bg-panel p-4" data-state="idle" id="s-failure">
+        <div class="stage rounded border border-border bg-card p-4" data-state="idle" id="s-failure">
           <div class="flex items-center gap-2 mb-2">
             <span class="stage-dot w-2.5 h-2.5 rounded-full"></span>
-            <span class="font-semibold text-white">1 · Failure captured</span>
+            <span class="font-semibold text-foreground">1 · Failure captured</span>
           </div>
-          <div id="failure-body" class="text-sm text-slate-300 grid sm:grid-cols-2 gap-x-6 gap-y-1"></div>
+          <div id="failure-body" class="text-sm text-foreground/80 grid sm:grid-cols-2 gap-x-6 gap-y-1 font-mono"></div>
         </div>
         <div class="connector"></div>
 
         <!-- 2 -->
-        <div class="stage rounded-xl border border-line bg-panel p-4" data-state="idle" id="s-classify">
+        <div class="stage rounded border border-border bg-card p-4" data-state="idle" id="s-classify">
           <div class="flex items-center gap-2 mb-2">
             <span class="stage-dot w-2.5 h-2.5 rounded-full"></span>
-            <span class="font-semibold text-white">2 · Classifier</span>
-            <span class="text-xs text-slate-500">— LLM judgment · <span id="classify-backend"></span></span>
-            <span id="category-badge" class="ml-auto text-xs px-2 py-0.5 rounded-md hidden"></span>
+            <span class="font-semibold text-foreground">2 · Classifier</span>
+            <span class="text-xs text-muted-foreground">— LLM judgment · <span id="classify-backend"></span></span>
+            <span id="category-badge" class="ml-auto text-xs font-mono px-2 py-0.5 rounded hidden"></span>
           </div>
-          <div id="classify-reasoning" class="text-sm text-slate-300 min-h-[2.5rem]"></div>
-          <div id="classify-conf" class="text-xs text-slate-500 mt-1"></div>
+          <div id="classify-reasoning" class="text-sm text-foreground/80 min-h-[2.5rem]"></div>
+          <div id="classify-conf" class="text-xs text-muted-foreground mt-1 font-mono"></div>
         </div>
         <div class="connector"></div>
 
         <!-- 3 -->
-        <div class="stage rounded-xl border border-line bg-panel p-4" data-state="idle" id="s-policy">
+        <div class="stage rounded border border-border bg-card p-4" data-state="idle" id="s-policy">
           <div class="flex items-center gap-2 mb-2">
             <span class="stage-dot w-2.5 h-2.5 rounded-full"></span>
-            <span class="font-semibold text-white">3 · Policy engine</span>
-            <span class="text-xs text-slate-500">— deterministic guardrails</span>
+            <span class="font-semibold text-foreground">3 · Policy engine</span>
+            <span class="text-xs text-muted-foreground">— deterministic guardrails</span>
           </div>
           <div id="policy-checks" class="space-y-1.5 text-sm"></div>
         </div>
         <div class="connector"></div>
 
         <!-- 4 -->
-        <div class="stage rounded-xl border border-line bg-panel p-4" data-state="idle" id="s-exec">
+        <div class="stage rounded border border-border bg-card p-4" data-state="idle" id="s-exec">
           <div class="flex items-center gap-2 mb-2">
             <span class="stage-dot w-2.5 h-2.5 rounded-full"></span>
-            <span class="font-semibold text-white">4 · Executor</span>
-            <span class="text-xs text-slate-500">— simulated, no real charge</span>
-            <span id="outcome-badge" class="ml-auto text-xs px-2 py-0.5 rounded-md hidden"></span>
+            <span class="font-semibold text-foreground">4 · Executor</span>
+            <span class="text-xs text-muted-foreground">— simulated, no real charge</span>
+            <span id="outcome-badge" class="ml-auto text-xs font-mono px-2 py-0.5 rounded hidden"></span>
           </div>
-          <div id="decision-body" class="text-sm text-slate-300"></div>
+          <div id="decision-body" class="text-sm text-foreground/80"></div>
           <div id="attempt-dots" class="flex gap-1.5 mt-2"></div>
         </div>
         <div class="connector"></div>
 
         <!-- 5 -->
-        <div class="stage rounded-xl border border-line bg-panel p-4" data-state="idle" id="s-audit">
+        <div class="stage rounded border border-border bg-card p-4" data-state="idle" id="s-audit">
           <div class="flex items-center gap-2 mb-2">
             <span class="stage-dot w-2.5 h-2.5 rounded-full"></span>
-            <span class="font-semibold text-white">5 · Audit log</span>
+            <span class="font-semibold text-foreground">5 · Audit log</span>
           </div>
-          <div id="audit-body" class="text-sm text-slate-400"></div>
+          <div id="audit-body" class="text-sm text-muted-foreground"></div>
         </div>
       </div>
 
       <!-- comparison -->
       <div id="comparison" class="hidden mt-6">
         <div class="grid sm:grid-cols-2 gap-4">
-          <div class="rounded-xl border border-rose-500/30 bg-rose-500/5 p-4">
-            <div class="text-sm font-semibold text-rose-300 mb-2">Naive “retry everything” cron</div>
-            <div id="naive-body" class="text-sm text-slate-300 space-y-1"></div>
+          <div class="rounded border border-destructive/30 bg-destructive/5 p-4">
+            <div class="text-sm font-semibold text-destructive mb-2">Naive “retry everything” cron</div>
+            <div id="naive-body" class="text-sm text-foreground/80 space-y-1 font-mono"></div>
           </div>
-          <div class="rounded-xl border border-emerald-500/30 bg-emerald-500/5 p-4">
-            <div class="text-sm font-semibold text-emerald-300 mb-2">Recovery agent</div>
-            <div id="agent-body" class="text-sm text-slate-300 space-y-1"></div>
+          <div class="rounded border border-primary/30 bg-primary/5 p-4">
+            <div class="text-sm font-semibold text-primary mb-2">Recovery agent</div>
+            <div id="agent-body" class="text-sm text-foreground/80 space-y-1 font-mono"></div>
           </div>
         </div>
-        <div class="rounded-xl border border-line bg-panel p-4 mt-4">
-          <div class="text-2xl font-bold text-white" id="savings-headline"></div>
-          <div class="text-sm text-slate-400 mt-1" id="savings-narrative"></div>
+        <div class="rounded border border-border bg-card p-4 mt-4">
+          <div class="text-2xl font-bold text-foreground font-mono" id="savings-headline"></div>
+          <div class="text-sm text-muted-foreground mt-1" id="savings-narrative"></div>
         </div>
       </div>
 
       <!-- ledger -->
       <div id="ledger-wrap" class="hidden mt-6">
         <div class="flex items-center justify-between mb-2">
-          <div class="font-semibold text-white">Session ledger</div>
-          <div class="text-sm text-slate-400">Saved vs naive this session:
-            <span id="ledger-total" class="text-emerald-300 font-semibold">₹0</span></div>
+          <div class="font-semibold text-foreground">Session ledger</div>
+          <div class="text-sm text-muted-foreground">Saved vs naive this session:
+            <span id="ledger-total" class="text-primary font-semibold font-mono">₹0</span></div>
         </div>
-        <div class="rounded-xl border border-line bg-panel overflow-x-auto">
+        <div class="rounded border border-border bg-card overflow-x-auto">
           <table class="audit w-full text-sm">
-            <thead class="text-slate-400 text-xs border-b border-line">
+            <thead class="text-muted-foreground text-xs uppercase tracking-wide border-b border-border">
               <tr><th class="text-left p-2">txn</th><th class="text-left p-2">reason</th>
               <th class="text-left p-2">category</th><th class="text-left p-2">action</th>
               <th class="text-left p-2">agent</th><th class="text-left p-2">naive</th>
               <th class="text-right p-2">₹ saved</th></tr>
             </thead>
-            <tbody id="ledger-body"></tbody>
+            <tbody id="ledger-body" class="font-mono"></tbody>
           </table>
         </div>
       </div>
@@ -206,100 +341,105 @@
 
 <!-- ================= BATCH ================= -->
 <section id="tab-batch" class="hidden">
-  <div id="batch-loading" class="text-slate-500 py-10 text-center">Loading batch results…</div>
+  <div id="batch-loading" class="text-muted-foreground py-10 text-center">Loading batch results…</div>
   <div id="batch-content" class="hidden space-y-6">
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4" id="batch-tiles"></div>
 
-    <div class="grid lg:grid-cols-2 gap-6">
-      <div class="rounded-xl border border-line bg-panel p-4">
-        <div class="font-semibold text-white mb-3">Recovery rate by failure reason</div>
-        <div id="batch-reason-bars" class="space-y-2 text-sm"></div>
+    <div id="batch-accuracy-card" class="rounded border border-border bg-card p-4"></div>
+
+    <div class="grid xl:grid-cols-2 gap-6">
+      <div class="rounded border border-border bg-card p-4">
+        <div class="flex items-center justify-between mb-1">
+          <div class="font-semibold text-foreground">Recovery rate by failure reason</div>
+          <div class="text-[11px] text-muted-foreground">drag to rotate</div>
+        </div>
+        <div id="chart-reason3d" class="h-[380px]"></div>
       </div>
-      <div class="rounded-xl border border-line bg-panel p-4">
-        <div class="font-semibold text-white mb-3">Final outcomes</div>
-        <div id="batch-outcome-bars" class="space-y-2 text-sm"></div>
-        <div class="font-semibold text-white mt-5 mb-3">Guardrail activity</div>
-        <div id="batch-guardrails" class="text-sm space-y-1"></div>
+      <div class="rounded border border-border bg-card p-4">
+        <div class="font-semibold text-foreground mb-1">Final outcomes</div>
+        <div id="chart-outcomes" class="h-[260px]"></div>
+        <div class="font-semibold text-foreground mt-2 mb-1">Guardrail activity</div>
+        <div id="chart-guardrails" class="h-[220px]"></div>
       </div>
     </div>
 
-    <div class="rounded-xl border border-line bg-panel p-4">
+    <div class="rounded border border-border bg-card p-4">
       <div class="flex flex-wrap items-center gap-2 mb-3">
-        <div class="font-semibold text-white mr-2">Audit trail</div>
+        <div class="font-semibold text-foreground mr-2">Audit trail</div>
         <input id="audit-search" placeholder="search id / reasoning"
-               class="bg-panel2 border border-line rounded-lg px-2 py-1 text-sm" />
-        <select id="audit-cat" class="bg-panel2 border border-line rounded-lg px-2 py-1 text-sm"><option value="">all categories</option></select>
-        <select id="audit-outcome" class="bg-panel2 border border-line rounded-lg px-2 py-1 text-sm"><option value="">all outcomes</option></select>
-        <span id="audit-count" class="text-xs text-slate-500 ml-auto"></span>
+               class="bg-input border border-border rounded px-2 py-1 text-sm" />
+        <select id="audit-cat" class="bg-input border border-border rounded px-2 py-1 text-sm"><option value="">all categories</option></select>
+        <select id="audit-outcome" class="bg-input border border-border rounded px-2 py-1 text-sm"><option value="">all outcomes</option></select>
+        <span id="audit-count" class="text-xs text-muted-foreground ml-auto font-mono"></span>
       </div>
-      <div class="overflow-x-auto max-h-[460px] overflow-y-auto rounded-lg border border-line">
+      <div class="overflow-x-auto max-h-[460px] overflow-y-auto rounded border border-border">
         <table class="audit w-full text-xs">
-          <thead class="text-slate-400 sticky top-0 bg-panel">
+          <thead class="text-muted-foreground uppercase tracking-wide sticky top-0 bg-card">
             <tr><th class="text-left p-2">txn</th><th class="text-left p-2">reason</th>
             <th class="text-left p-2">#</th><th class="text-left p-2">category</th>
             <th class="text-left p-2">action</th><th class="text-left p-2">outcome</th>
             <th class="text-left p-2">reasoning</th></tr>
           </thead>
-          <tbody id="audit-body"></tbody>
+          <tbody id="audit-body" class="font-mono"></tbody>
         </table>
       </div>
     </div>
   </div>
-  <div id="batch-error" class="hidden rounded-xl border border-amber-500/30 bg-amber-500/5 p-4 text-amber-200 text-sm"></div>
+  <div id="batch-error" class="hidden rounded border border-chart-2/30 bg-chart-2/10 p-4 text-foreground text-sm"></div>
 </section>
 
 <!-- ================= ARCHITECTURE ================= -->
 <section id="tab-arch" class="hidden space-y-6 text-sm leading-relaxed">
-  <div class="rounded-xl border border-line bg-panel p-5">
-    <div class="font-semibold text-white text-base mb-2">Pipeline</div>
+  <div class="rounded border border-border bg-card p-5">
+    <div class="font-semibold text-foreground text-base mb-2">Pipeline</div>
     <div class="grid md:grid-cols-5 gap-2 text-center text-xs">
-      <div class="rounded-lg border border-line p-3"><div class="font-semibold text-white">1 · Classifier</div><div class="text-slate-400 mt-1">LLM judgment — which of 5 recovery categories</div></div>
-      <div class="rounded-lg border border-line p-3"><div class="font-semibold text-white">2 · Policy engine</div><div class="text-slate-400 mt-1">Deterministic — action, timing, hard limits</div></div>
-      <div class="rounded-lg border border-line p-3"><div class="font-semibold text-white">3 · Executor</div><div class="text-slate-400 mt-1">Simulated action — no real charge</div></div>
-      <div class="rounded-lg border border-line p-3"><div class="font-semibold text-white">4 · Audit log</div><div class="text-slate-400 mt-1">Every decision + reasoning, timestamped</div></div>
-      <div class="rounded-lg border border-line p-3"><div class="font-semibold text-white">5 · Aggregator</div><div class="text-slate-400 mt-1">Recovery rate, false-positive cost, ₹ recovered</div></div>
+      <div class="rounded border border-border p-3"><div class="font-semibold text-foreground">1 · Classifier</div><div class="text-muted-foreground mt-1">LLM judgment — which of 5 recovery categories</div></div>
+      <div class="rounded border border-border p-3"><div class="font-semibold text-foreground">2 · Policy engine</div><div class="text-muted-foreground mt-1">Deterministic — action, timing, hard limits</div></div>
+      <div class="rounded border border-border p-3"><div class="font-semibold text-foreground">3 · Executor</div><div class="text-muted-foreground mt-1">Simulated action — no real charge</div></div>
+      <div class="rounded border border-border p-3"><div class="font-semibold text-foreground">4 · Audit log</div><div class="text-muted-foreground mt-1">Every decision + reasoning, timestamped</div></div>
+      <div class="rounded border border-border p-3"><div class="font-semibold text-foreground">5 · Aggregator</div><div class="text-muted-foreground mt-1">Recovery rate, false-positive cost, ₹ recovered</div></div>
     </div>
   </div>
 
-  <div class="rounded-xl border border-line bg-panel p-5">
-    <div class="font-semibold text-white text-base mb-3">Safety design — LLM judgment vs. deterministic guardrails</div>
+  <div class="rounded border border-border bg-card p-5">
+    <div class="font-semibold text-foreground text-base mb-3">Safety design — LLM judgment vs. deterministic guardrails</div>
     <div class="grid md:grid-cols-2 gap-4">
-      <div class="rounded-lg border border-brand/30 bg-brand/5 p-4">
-        <div class="font-semibold text-brand mb-1">classifier.py — an LLM</div>
-        <div class="text-slate-300">Decides <em>what kind</em> of failure this is (1 of 5 categories) + a reasoning string. Its output has <strong>no action field</strong> — it cannot, on its own, cause a retry.</div>
+      <div class="rounded border border-primary/30 bg-primary/5 p-4">
+        <div class="font-semibold text-primary mb-1">classifier.py — an LLM</div>
+        <div class="text-foreground/80">Decides <em>what kind</em> of failure this is (1 of 5 categories) + a reasoning string. Its output has <strong>no action field</strong> — it cannot, on its own, cause a retry.</div>
       </div>
-      <div class="rounded-lg border border-emerald-500/30 bg-emerald-500/5 p-4">
-        <div class="font-semibold text-emerald-300 mb-1">policy_engine.py — plain Python</div>
-        <div class="text-slate-300">No LLM, no randomness. Owns the hard-decline denylist, the 3-retry cap, the 4h cooldown, and escalation. A hallucinated category can at worst mislabel — it can't bypass a cap or retry a blocked card.</div>
+      <div class="rounded border border-chart-2/30 bg-chart-2/10 p-4">
+        <div class="font-semibold text-foreground mb-1">policy_engine.py — plain Python</div>
+        <div class="text-foreground/80">No LLM, no randomness. Owns the hard-decline denylist, the 3-retry cap, the 4h cooldown, and escalation. A hallucinated category can at worst mislabel — it can't bypass a cap or retry a blocked card.</div>
       </div>
     </div>
   </div>
 
-  <div class="rounded-xl border border-line bg-panel p-5">
-    <div class="font-semibold text-white text-base mb-3">Category → action</div>
-    <table class="w-full text-slate-300">
-      <thead class="text-slate-400 text-xs border-b border-line"><tr>
+  <div class="rounded border border-border bg-card p-5">
+    <div class="font-semibold text-foreground text-base mb-3">Category → action</div>
+    <table class="w-full text-foreground/80">
+      <thead class="text-muted-foreground uppercase tracking-wide text-xs border-b border-border"><tr>
         <th class="text-left p-2">Category (LLM)</th><th class="text-left p-2">Failure reasons</th><th class="text-left p-2">Action (policy engine)</th></tr></thead>
       <tbody>
-        <tr class="border-b border-line/50"><td class="p-2">hard_decline</td><td class="p-2">card blocked, fraud-suspected decline, card stolen</td><td class="p-2">no_action</td></tr>
-        <tr class="border-b border-line/50"><td class="p-2">soft_recoverable</td><td class="p-2">insufficient funds, bank timeout, network error</td><td class="p-2">smart_retry (timed)</td></tr>
-        <tr class="border-b border-line/50"><td class="p-2">needs_reauth</td><td class="p-2">expired UPI mandate</td><td class="p-2">request_mandate_reauth</td></tr>
-        <tr class="border-b border-line/50"><td class="p-2">needs_customer_action</td><td class="p-2">wrong CVV, expired card, invalid OTP, timeout-on-an-expired-card</td><td class="p-2">nudge_customer</td></tr>
-        <tr><td class="p-2">needs_review</td><td class="p-2">chronic repeat failures, likely false fraud flag, "transient" errors that won't clear, data mismatches</td><td class="p-2">escalate_manual_review</td></tr>
+        <tr class="border-b border-border/50"><td class="p-2 font-mono">hard_decline</td><td class="p-2">card blocked, fraud-suspected decline, card stolen</td><td class="p-2 font-mono">no_action</td></tr>
+        <tr class="border-b border-border/50"><td class="p-2 font-mono">soft_recoverable</td><td class="p-2">insufficient funds, bank timeout, network error</td><td class="p-2 font-mono">smart_retry (timed)</td></tr>
+        <tr class="border-b border-border/50"><td class="p-2 font-mono">needs_reauth</td><td class="p-2">expired UPI mandate</td><td class="p-2 font-mono">request_mandate_reauth</td></tr>
+        <tr class="border-b border-border/50"><td class="p-2 font-mono">needs_customer_action</td><td class="p-2">wrong CVV, expired card, invalid OTP, timeout-on-an-expired-card</td><td class="p-2 font-mono">nudge_customer</td></tr>
+        <tr><td class="p-2 font-mono">needs_review</td><td class="p-2">chronic repeat failures, likely false fraud flag, "transient" errors that won't clear, data mismatches</td><td class="p-2 font-mono">escalate_manual_review</td></tr>
       </tbody>
     </table>
-    <div class="text-slate-400 text-xs mt-3">Smart-retry timing: transient failures retry after a 4–6h delay; <code>insufficient_funds</code> retries 24–48h out and is <em>snapped onto the 1st–5th of the month</em> (salary-credit window) when one falls inside the 24–72h window.</div>
+    <div class="text-muted-foreground text-xs mt-3">Smart-retry timing: transient failures retry after a 4–6h delay; <code class="font-mono">insufficient_funds</code> retries 24–48h out and is <em>snapped onto the 1st–5th of the month</em> (salary-credit window) when one falls inside the 24–72h window.</div>
   </div>
 
-  <div class="rounded-xl border border-line bg-panel p-5">
-    <div class="font-semibold text-white text-base mb-2">How accuracy is measured</div>
-    <div class="text-slate-300">The synthetic dataset is <strong>~25% context-dependent</strong> — cases where the raw <code>failure_reason</code> points one way but the context (expired instrument, chronic repeat failures, a fraud flag on a loyal customer, a "transient" error that already survived two retries) means the right action is something else. A flat lookup gets all of these wrong. <code>eval/run_eval.py</code> scores the classifier against a hidden context-aware oracle and reports category accuracy split by clean vs. context cases, plus a confusion matrix and the LLM-vs-heuristic disagreement rate. Low-confidence calls (&lt; 0.6) are escalated, not guessed.</div>
+  <div class="rounded border border-border bg-card p-5">
+    <div class="font-semibold text-foreground text-base mb-2">How accuracy is measured</div>
+    <div class="text-foreground/80">The synthetic dataset is <strong>~25% context-dependent</strong> — cases where the raw <code class="font-mono">failure_reason</code> points one way but the context (expired instrument, chronic repeat failures, a fraud flag on a loyal customer, a "transient" error that already survived two retries) means the right action is something else. A flat lookup gets all of these wrong. <code class="font-mono">eval/run_eval.py</code> scores the classifier against a hidden context-aware oracle and reports category accuracy split by clean vs. context cases, plus a confusion matrix and the LLM-vs-heuristic disagreement rate. Low-confidence calls (&lt; 0.6) are escalated, not guessed.</div>
   </div>
 </section>
 
 </main>
 
-<footer class="max-w-6xl mx-auto px-5 py-8 text-xs text-slate-600">
+<footer class="max-w-[1920px] mx-auto px-6 lg:px-10 py-8 text-xs text-muted-foreground/70">
   Payment Failure Recovery Agent · demo build · no real payments are processed
 </footer>
 
