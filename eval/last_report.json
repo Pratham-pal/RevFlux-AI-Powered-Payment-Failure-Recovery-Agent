@@ -1,0 +1,15 @@
+{
+  "ts": "2026-09-01T18:29:51",
+  "prompt_version": "v3_fewshot_context_fixed",
+  "backend": "ollama",
+  "model": "qwen2.5:14b",
+  "n": 200,
+  "category_accuracy": 0.81,
+  "category_accuracy_heuristic": 0.75,
+  "category_accuracy_twist": 0.98,
+  "category_accuracy_clean": 0.7533,
+  "best_action_accuracy": 0.81,
+  "retry_precision": 1.0,
+  "retry_recall": 0.6111,
+  "disagreement_rate": 0.435
+}

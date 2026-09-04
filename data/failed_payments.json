@@ -1,0 +1,3802 @@
+[
+  {
+    "transaction_id": "txn_00001",
+    "timestamp": "2026-08-01T04:40:29",
+    "amount": 190039.97,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_5108",
+    "customer_history": {
+      "prior_successful_payments": 25,
+      "prior_failures": 5,
+      "account_age_days": 1345,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00002",
+    "timestamp": "2026-08-15T08:10:09",
+    "amount": 3447.99,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "one_time",
+    "failure_reason": "network_error",
+    "instrument_status": "ok",
+    "customer_id": "cust_0345",
+    "customer_history": {
+      "prior_successful_payments": 1,
+      "prior_failures": 2,
+      "account_age_days": 5,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 3
+    },
+    "retry_count_so_far": 2
+  },
+  {
+    "transaction_id": "txn_00003",
+    "timestamp": "2026-08-16T06:15:49",
+    "amount": 149.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_0515",
+    "customer_history": {
+      "prior_successful_payments": 55,
+      "prior_failures": 2,
+      "account_age_days": 160,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00004",
+    "timestamp": "2026-08-01T04:44:49",
+    "amount": 2071.45,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "one_time",
+    "failure_reason": "network_error",
+    "instrument_status": "ok",
+    "customer_id": "cust_3982",
+    "customer_history": {
+      "prior_successful_payments": 3,
+      "prior_failures": 4,
+      "account_age_days": 17,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 4
+    },
+    "retry_count_so_far": 2
+  },
+  {
+    "transaction_id": "txn_00005",
+    "timestamp": "2026-08-10T04:12:49",
+    "amount": 999.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "wrong_cvv",
+    "instrument_status": "ok",
+    "customer_id": "cust_6736",
+    "customer_history": {
+      "prior_successful_payments": 29,
+      "prior_failures": 6,
+      "account_age_days": 1508,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00006",
+    "timestamp": "2026-08-24T10:22:53",
+    "amount": 999.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "card_expired",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_5560",
+    "customer_history": {
+      "prior_successful_payments": 51,
+      "prior_failures": 6,
+      "account_age_days": 238,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00007",
+    "timestamp": "2026-08-06T21:28:21",
+    "amount": 2833.97,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_4093",
+    "customer_history": {
+      "prior_successful_payments": 55,
+      "prior_failures": 0,
+      "account_age_days": 922,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00008",
+    "timestamp": "2026-08-01T03:10:10",
+    "amount": 12556.81,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_3873",
+    "customer_history": {
+      "prior_successful_payments": 10,
+      "prior_failures": 3,
+      "account_age_days": 1009,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00009",
+    "timestamp": "2026-08-19T09:11:02",
+    "amount": 97848.41,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_4346",
+    "customer_history": {
+      "prior_successful_payments": 59,
+      "prior_failures": 6,
+      "account_age_days": 1622,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00010",
+    "timestamp": "2026-07-31T09:28:59",
+    "amount": 167158.47,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_2537",
+    "customer_history": {
+      "prior_successful_payments": 12,
+      "prior_failures": 2,
+      "account_age_days": 460,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00011",
+    "timestamp": "2026-08-12T03:37:27",
+    "amount": 99.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "invalid_otp",
+    "instrument_status": "ok",
+    "customer_id": "cust_9572",
+    "customer_history": {
+      "prior_successful_payments": 30,
+      "prior_failures": 4,
+      "account_age_days": 1761,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00012",
+    "timestamp": "2026-08-18T08:29:54",
+    "amount": 149.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_3854",
+    "customer_history": {
+      "prior_successful_payments": 14,
+      "prior_failures": 4,
+      "account_age_days": 1286,
+      "recent_failures_same_reason": 3,
+      "recent_failure_window_days": 11
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00013",
+    "timestamp": "2026-08-07T00:34:04",
+    "amount": 799.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "card_expired",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_4273",
+    "customer_history": {
+      "prior_successful_payments": 13,
+      "prior_failures": 5,
+      "account_age_days": 1481,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00014",
+    "timestamp": "2026-08-12T19:28:42",
+    "amount": 6912.65,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "network_error",
+    "instrument_status": "ok",
+    "customer_id": "cust_0153",
+    "customer_history": {
+      "prior_successful_payments": 29,
+      "prior_failures": 4,
+      "account_age_days": 1168,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00015",
+    "timestamp": "2026-08-14T12:01:09",
+    "amount": 2073.6,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_5719",
+    "customer_history": {
+      "prior_successful_payments": 56,
+      "prior_failures": 0,
+      "account_age_days": 515,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00016",
+    "timestamp": "2026-08-12T16:32:32",
+    "amount": 154861.05,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_9087",
+    "customer_history": {
+      "prior_successful_payments": 11,
+      "prior_failures": 9,
+      "account_age_days": 332,
+      "recent_failures_same_reason": 3,
+      "recent_failure_window_days": 9
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00017",
+    "timestamp": "2026-07-31T12:26:52",
+    "amount": 2416.17,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_9910",
+    "customer_history": {
+      "prior_successful_payments": 13,
+      "prior_failures": 5,
+      "account_age_days": 717,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00018",
+    "timestamp": "2026-08-03T15:49:09",
+    "amount": 3841.71,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "card_expired",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_0833",
+    "customer_history": {
+      "prior_successful_payments": 5,
+      "prior_failures": 5,
+      "account_age_days": 882,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00019",
+    "timestamp": "2026-08-21T00:35:03",
+    "amount": 9592.99,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_2648",
+    "customer_history": {
+      "prior_successful_payments": 47,
+      "prior_failures": 3,
+      "account_age_days": 1144,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00020",
+    "timestamp": "2026-08-20T03:20:22",
+    "amount": 8229.3,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_9544",
+    "customer_history": {
+      "prior_successful_payments": 35,
+      "prior_failures": 1,
+      "account_age_days": 895,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00021",
+    "timestamp": "2026-08-25T10:31:09",
+    "amount": 225236.54,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "network_error",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_3442",
+    "customer_history": {
+      "prior_successful_payments": 43,
+      "prior_failures": 1,
+      "account_age_days": 1380,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00022",
+    "timestamp": "2026-08-07T15:32:10",
+    "amount": 243590.07,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_3879",
+    "customer_history": {
+      "prior_successful_payments": 55,
+      "prior_failures": 1,
+      "account_age_days": 1653,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00023",
+    "timestamp": "2026-08-11T05:58:34",
+    "amount": 11757.56,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_4066",
+    "customer_history": {
+      "prior_successful_payments": 17,
+      "prior_failures": 1,
+      "account_age_days": 1627,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00024",
+    "timestamp": "2026-08-04T12:36:23",
+    "amount": 3414.26,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "card_expired",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_7542",
+    "customer_history": {
+      "prior_successful_payments": 22,
+      "prior_failures": 2,
+      "account_age_days": 1695,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00025",
+    "timestamp": "2026-08-17T23:59:15",
+    "amount": 6037.14,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "one_time",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_1138",
+    "customer_history": {
+      "prior_successful_payments": 2,
+      "prior_failures": 3,
+      "account_age_days": 46,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 8
+    },
+    "retry_count_so_far": 2
+  },
+  {
+    "transaction_id": "txn_00026",
+    "timestamp": "2026-08-21T18:37:02",
+    "amount": 219874.41,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_4280",
+    "customer_history": {
+      "prior_successful_payments": 11,
+      "prior_failures": 4,
+      "account_age_days": 558,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00027",
+    "timestamp": "2026-08-12T03:32:22",
+    "amount": 6602.27,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_6312",
+    "customer_history": {
+      "prior_successful_payments": 57,
+      "prior_failures": 4,
+      "account_age_days": 404,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00028",
+    "timestamp": "2026-08-01T05:39:29",
+    "amount": 10334.17,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "wrong_cvv",
+    "instrument_status": "ok",
+    "customer_id": "cust_3229",
+    "customer_history": {
+      "prior_successful_payments": 23,
+      "prior_failures": 3,
+      "account_age_days": 158,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00029",
+    "timestamp": "2026-08-21T07:48:04",
+    "amount": 499.0,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "subscription",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_6692",
+    "customer_history": {
+      "prior_successful_payments": 20,
+      "prior_failures": 3,
+      "account_age_days": 1442,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00030",
+    "timestamp": "2026-08-08T23:15:50",
+    "amount": 170942.9,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_2852",
+    "customer_history": {
+      "prior_successful_payments": 39,
+      "prior_failures": 4,
+      "account_age_days": 631,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00031",
+    "timestamp": "2026-08-17T04:07:10",
+    "amount": 6505.33,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_7619",
+    "customer_history": {
+      "prior_successful_payments": 28,
+      "prior_failures": 3,
+      "account_age_days": 1398,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00032",
+    "timestamp": "2026-08-19T03:17:43",
+    "amount": 166418.43,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "card_expired",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_4650",
+    "customer_history": {
+      "prior_successful_payments": 32,
+      "prior_failures": 5,
+      "account_age_days": 1311,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00033",
+    "timestamp": "2026-08-15T23:21:30",
+    "amount": 169834.94,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_3263",
+    "customer_history": {
+      "prior_successful_payments": 9,
+      "prior_failures": 0,
+      "account_age_days": 109,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00034",
+    "timestamp": "2026-08-23T20:08:57",
+    "amount": 116576.96,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_6292",
+    "customer_history": {
+      "prior_successful_payments": 31,
+      "prior_failures": 3,
+      "account_age_days": 514,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00035",
+    "timestamp": "2026-08-22T04:49:01",
+    "amount": 195713.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "network_error",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_3586",
+    "customer_history": {
+      "prior_successful_payments": 11,
+      "prior_failures": 6,
+      "account_age_days": 1440,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00036",
+    "timestamp": "2026-08-21T11:36:26",
+    "amount": 6901.28,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "one_time",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_8703",
+    "customer_history": {
+      "prior_successful_payments": 35,
+      "prior_failures": 4,
+      "account_age_days": 664,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00037",
+    "timestamp": "2026-08-02T20:53:27",
+    "amount": 999.0,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "subscription",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_2608",
+    "customer_history": {
+      "prior_successful_payments": 47,
+      "prior_failures": 6,
+      "account_age_days": 987,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00038",
+    "timestamp": "2026-08-02T01:38:31",
+    "amount": 123726.27,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_3920",
+    "customer_history": {
+      "prior_successful_payments": 17,
+      "prior_failures": 3,
+      "account_age_days": 173,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00039",
+    "timestamp": "2026-08-01T03:40:38",
+    "amount": 1300.61,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_3789",
+    "customer_history": {
+      "prior_successful_payments": 24,
+      "prior_failures": 5,
+      "account_age_days": 327,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00040",
+    "timestamp": "2026-08-01T00:48:44",
+    "amount": 7042.27,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_3389",
+    "customer_history": {
+      "prior_successful_payments": 15,
+      "prior_failures": 7,
+      "account_age_days": 1316,
+      "recent_failures_same_reason": 5,
+      "recent_failure_window_days": 7
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00041",
+    "timestamp": "2026-08-08T21:49:27",
+    "amount": 1499.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_5764",
+    "customer_history": {
+      "prior_successful_payments": 11,
+      "prior_failures": 7,
+      "account_age_days": 978,
+      "recent_failures_same_reason": 5,
+      "recent_failure_window_days": 12
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00042",
+    "timestamp": "2026-08-16T16:03:14",
+    "amount": 1499.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_4472",
+    "customer_history": {
+      "prior_successful_payments": 27,
+      "prior_failures": 3,
+      "account_age_days": 74,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00043",
+    "timestamp": "2026-08-19T08:42:33",
+    "amount": 1499.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_8752",
+    "customer_history": {
+      "prior_successful_payments": 1,
+      "prior_failures": 3,
+      "account_age_days": 1227,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00044",
+    "timestamp": "2026-08-20T18:53:56",
+    "amount": 1499.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "card_blocked",
+    "instrument_status": "card_blocked",
+    "customer_id": "cust_2978",
+    "customer_history": {
+      "prior_successful_payments": 3,
+      "prior_failures": 2,
+      "account_age_days": 791,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00045",
+    "timestamp": "2026-08-08T23:17:10",
+    "amount": 4246.02,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_6907",
+    "customer_history": {
+      "prior_successful_payments": 16,
+      "prior_failures": 6,
+      "account_age_days": 182,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00046",
+    "timestamp": "2026-08-10T09:16:00",
+    "amount": 3440.91,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_0660",
+    "customer_history": {
+      "prior_successful_payments": 48,
+      "prior_failures": 0,
+      "account_age_days": 521,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00047",
+    "timestamp": "2026-08-21T05:56:31",
+    "amount": 7156.06,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "card_expired",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_1875",
+    "customer_history": {
+      "prior_successful_payments": 36,
+      "prior_failures": 1,
+      "account_age_days": 967,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00048",
+    "timestamp": "2026-07-28T21:30:20",
+    "amount": 14459.65,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "wrong_cvv",
+    "instrument_status": "ok",
+    "customer_id": "cust_1877",
+    "customer_history": {
+      "prior_successful_payments": 49,
+      "prior_failures": 6,
+      "account_age_days": 350,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00049",
+    "timestamp": "2026-08-12T05:32:37",
+    "amount": 8679.37,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "one_time",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_6499",
+    "customer_history": {
+      "prior_successful_payments": 60,
+      "prior_failures": 5,
+      "account_age_days": 421,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00050",
+    "timestamp": "2026-08-22T10:16:35",
+    "amount": 499.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "wrong_cvv",
+    "instrument_status": "ok",
+    "customer_id": "cust_9838",
+    "customer_history": {
+      "prior_successful_payments": 51,
+      "prior_failures": 0,
+      "account_age_days": 1645,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00051",
+    "timestamp": "2026-08-10T12:28:42",
+    "amount": 999.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_6072",
+    "customer_history": {
+      "prior_successful_payments": 4,
+      "prior_failures": 4,
+      "account_age_days": 1341,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00052",
+    "timestamp": "2026-08-03T13:52:26",
+    "amount": 149.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_7103",
+    "customer_history": {
+      "prior_successful_payments": 23,
+      "prior_failures": 5,
+      "account_age_days": 1712,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00053",
+    "timestamp": "2026-08-18T19:47:09",
+    "amount": 499.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_8818",
+    "customer_history": {
+      "prior_successful_payments": 49,
+      "prior_failures": 3,
+      "account_age_days": 967,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00054",
+    "timestamp": "2026-08-15T10:58:39",
+    "amount": 12477.89,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "issuer_declined_fraud_suspected",
+    "instrument_status": "ok",
+    "customer_id": "cust_4570",
+    "customer_history": {
+      "prior_successful_payments": 1,
+      "prior_failures": 1,
+      "account_age_days": 30,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00055",
+    "timestamp": "2026-08-11T14:19:52",
+    "amount": 2809.41,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_5814",
+    "customer_history": {
+      "prior_successful_payments": 51,
+      "prior_failures": 2,
+      "account_age_days": 712,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00056",
+    "timestamp": "2026-07-31T09:27:24",
+    "amount": 7487.02,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_1403",
+    "customer_history": {
+      "prior_successful_payments": 15,
+      "prior_failures": 5,
+      "account_age_days": 847,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00057",
+    "timestamp": "2026-08-03T13:09:07",
+    "amount": 1499.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "network_error",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_0283",
+    "customer_history": {
+      "prior_successful_payments": 5,
+      "prior_failures": 2,
+      "account_age_days": 468,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00058",
+    "timestamp": "2026-08-09T11:03:37",
+    "amount": 1499.0,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "subscription",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_6972",
+    "customer_history": {
+      "prior_successful_payments": 2,
+      "prior_failures": 3,
+      "account_age_days": 49,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 7
+    },
+    "retry_count_so_far": 2
+  },
+  {
+    "transaction_id": "txn_00059",
+    "timestamp": "2026-08-16T04:24:14",
+    "amount": 1897.77,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_5170",
+    "customer_history": {
+      "prior_successful_payments": 7,
+      "prior_failures": 5,
+      "account_age_days": 1112,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00060",
+    "timestamp": "2026-08-03T20:52:04",
+    "amount": 4219.84,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "one_time",
+    "failure_reason": "network_error",
+    "instrument_status": "ok",
+    "customer_id": "cust_1648",
+    "customer_history": {
+      "prior_successful_payments": 53,
+      "prior_failures": 1,
+      "account_age_days": 621,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00061",
+    "timestamp": "2026-08-26T16:30:58",
+    "amount": 199.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_4495",
+    "customer_history": {
+      "prior_successful_payments": 2,
+      "prior_failures": 0,
+      "account_age_days": 1148,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00062",
+    "timestamp": "2026-08-03T13:05:06",
+    "amount": 149.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_9406",
+    "customer_history": {
+      "prior_successful_payments": 18,
+      "prior_failures": 3,
+      "account_age_days": 995,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00063",
+    "timestamp": "2026-08-04T04:24:19",
+    "amount": 1799.9,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_1071",
+    "customer_history": {
+      "prior_successful_payments": 25,
+      "prior_failures": 3,
+      "account_age_days": 166,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00064",
+    "timestamp": "2026-07-31T01:14:40",
+    "amount": 14241.97,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "issuer_declined_fraud_suspected",
+    "instrument_status": "ok",
+    "customer_id": "cust_4067",
+    "customer_history": {
+      "prior_successful_payments": 49,
+      "prior_failures": 2,
+      "account_age_days": 2515,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00065",
+    "timestamp": "2026-08-16T10:03:20",
+    "amount": 999.0,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "subscription",
+    "failure_reason": "invalid_otp",
+    "instrument_status": "ok",
+    "customer_id": "cust_7254",
+    "customer_history": {
+      "prior_successful_payments": 19,
+      "prior_failures": 6,
+      "account_age_days": 1220,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00066",
+    "timestamp": "2026-07-28T18:43:43",
+    "amount": 149.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "network_error",
+    "instrument_status": "ok",
+    "customer_id": "cust_3458",
+    "customer_history": {
+      "prior_successful_payments": 16,
+      "prior_failures": 5,
+      "account_age_days": 181,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00067",
+    "timestamp": "2026-08-27T05:52:58",
+    "amount": 6186.91,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "wrong_cvv",
+    "instrument_status": "ok",
+    "customer_id": "cust_9730",
+    "customer_history": {
+      "prior_successful_payments": 30,
+      "prior_failures": 2,
+      "account_age_days": 81,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00068",
+    "timestamp": "2026-08-05T08:00:55",
+    "amount": 149.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_4335",
+    "customer_history": {
+      "prior_successful_payments": 50,
+      "prior_failures": 6,
+      "account_age_days": 1295,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00069",
+    "timestamp": "2026-08-21T19:16:34",
+    "amount": 8213.98,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_4353",
+    "customer_history": {
+      "prior_successful_payments": 52,
+      "prior_failures": 1,
+      "account_age_days": 161,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00070",
+    "timestamp": "2026-07-30T17:49:33",
+    "amount": 499.0,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "subscription",
+    "failure_reason": "issuer_declined_fraud_suspected",
+    "instrument_status": "ok",
+    "customer_id": "cust_2038",
+    "customer_history": {
+      "prior_successful_payments": 71,
+      "prior_failures": 2,
+      "account_age_days": 1572,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00071",
+    "timestamp": "2026-08-03T01:54:28",
+    "amount": 137295.48,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "issuer_declined_fraud_suspected",
+    "instrument_status": "ok",
+    "customer_id": "cust_1318",
+    "customer_history": {
+      "prior_successful_payments": 2,
+      "prior_failures": 0,
+      "account_age_days": 28,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00072",
+    "timestamp": "2026-08-16T06:17:02",
+    "amount": 14432.48,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "issuer_declined_fraud_suspected",
+    "instrument_status": "ok",
+    "customer_id": "cust_4416",
+    "customer_history": {
+      "prior_successful_payments": 78,
+      "prior_failures": 0,
+      "account_age_days": 2512,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00073",
+    "timestamp": "2026-08-05T21:45:56",
+    "amount": 13749.48,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "one_time",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_9591",
+    "customer_history": {
+      "prior_successful_payments": 27,
+      "prior_failures": 5,
+      "account_age_days": 1682,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00074",
+    "timestamp": "2026-08-11T04:40:04",
+    "amount": 4883.77,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "network_error",
+    "instrument_status": "ok",
+    "customer_id": "cust_2635",
+    "customer_history": {
+      "prior_successful_payments": 21,
+      "prior_failures": 3,
+      "account_age_days": 1435,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00075",
+    "timestamp": "2026-07-31T16:05:28",
+    "amount": 646.79,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_5154",
+    "customer_history": {
+      "prior_successful_payments": 10,
+      "prior_failures": 6,
+      "account_age_days": 357,
+      "recent_failures_same_reason": 4,
+      "recent_failure_window_days": 11
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00076",
+    "timestamp": "2026-08-01T00:49:58",
+    "amount": 6983.45,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_3074",
+    "customer_history": {
+      "prior_successful_payments": 33,
+      "prior_failures": 2,
+      "account_age_days": 1290,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00077",
+    "timestamp": "2026-08-24T20:52:05",
+    "amount": 299.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_4376",
+    "customer_history": {
+      "prior_successful_payments": 35,
+      "prior_failures": 1,
+      "account_age_days": 604,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00078",
+    "timestamp": "2026-07-28T19:36:48",
+    "amount": 12009.77,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "one_time",
+    "failure_reason": "network_error",
+    "instrument_status": "ok",
+    "customer_id": "cust_5092",
+    "customer_history": {
+      "prior_successful_payments": 35,
+      "prior_failures": 0,
+      "account_age_days": 1146,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00079",
+    "timestamp": "2026-08-21T20:48:30",
+    "amount": 118054.73,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_2523",
+    "customer_history": {
+      "prior_successful_payments": 31,
+      "prior_failures": 5,
+      "account_age_days": 612,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00080",
+    "timestamp": "2026-08-04T10:49:27",
+    "amount": 64714.07,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_9032",
+    "customer_history": {
+      "prior_successful_payments": 9,
+      "prior_failures": 3,
+      "account_age_days": 405,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00081",
+    "timestamp": "2026-08-23T23:39:56",
+    "amount": 72680.61,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "network_error",
+    "instrument_status": "ok",
+    "customer_id": "cust_5569",
+    "customer_history": {
+      "prior_successful_payments": 59,
+      "prior_failures": 6,
+      "account_age_days": 1054,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00082",
+    "timestamp": "2026-07-29T21:10:05",
+    "amount": 1499.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "wrong_cvv",
+    "instrument_status": "ok",
+    "customer_id": "cust_2435",
+    "customer_history": {
+      "prior_successful_payments": 28,
+      "prior_failures": 4,
+      "account_age_days": 1006,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00083",
+    "timestamp": "2026-08-05T06:29:07",
+    "amount": 799.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "wrong_cvv",
+    "instrument_status": "ok",
+    "customer_id": "cust_3091",
+    "customer_history": {
+      "prior_successful_payments": 44,
+      "prior_failures": 1,
+      "account_age_days": 1186,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00084",
+    "timestamp": "2026-08-11T22:17:52",
+    "amount": 11196.11,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "one_time",
+    "failure_reason": "invalid_otp",
+    "instrument_status": "ok",
+    "customer_id": "cust_6326",
+    "customer_history": {
+      "prior_successful_payments": 42,
+      "prior_failures": 6,
+      "account_age_days": 1695,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00085",
+    "timestamp": "2026-08-21T05:54:45",
+    "amount": 128061.33,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "card_blocked",
+    "instrument_status": "card_blocked",
+    "customer_id": "cust_9670",
+    "customer_history": {
+      "prior_successful_payments": 21,
+      "prior_failures": 6,
+      "account_age_days": 220,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00086",
+    "timestamp": "2026-08-05T04:38:25",
+    "amount": 99.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_6718",
+    "customer_history": {
+      "prior_successful_payments": 55,
+      "prior_failures": 5,
+      "account_age_days": 331,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00087",
+    "timestamp": "2026-08-08T01:53:55",
+    "amount": 9782.57,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_8743",
+    "customer_history": {
+      "prior_successful_payments": 24,
+      "prior_failures": 2,
+      "account_age_days": 1298,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00088",
+    "timestamp": "2026-08-25T15:10:29",
+    "amount": 156277.57,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "invalid_otp",
+    "instrument_status": "ok",
+    "customer_id": "cust_4709",
+    "customer_history": {
+      "prior_successful_payments": 14,
+      "prior_failures": 5,
+      "account_age_days": 200,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00089",
+    "timestamp": "2026-08-22T11:54:03",
+    "amount": 1499.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "card_expired",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_2726",
+    "customer_history": {
+      "prior_successful_payments": 44,
+      "prior_failures": 2,
+      "account_age_days": 74,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00090",
+    "timestamp": "2026-08-09T04:16:43",
+    "amount": 6517.23,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_8703",
+    "customer_history": {
+      "prior_successful_payments": 15,
+      "prior_failures": 8,
+      "account_age_days": 488,
+      "recent_failures_same_reason": 3,
+      "recent_failure_window_days": 8
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00091",
+    "timestamp": "2026-08-15T16:24:47",
+    "amount": 126928.48,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_3805",
+    "customer_history": {
+      "prior_successful_payments": 29,
+      "prior_failures": 5,
+      "account_age_days": 535,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00092",
+    "timestamp": "2026-08-04T18:56:27",
+    "amount": 225796.31,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "network_error",
+    "instrument_status": "ok",
+    "customer_id": "cust_1211",
+    "customer_history": {
+      "prior_successful_payments": 28,
+      "prior_failures": 2,
+      "account_age_days": 1218,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 2
+  },
+  {
+    "transaction_id": "txn_00093",
+    "timestamp": "2026-08-05T04:44:52",
+    "amount": 499.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "card_reported_stolen",
+    "instrument_status": "card_reported_stolen",
+    "customer_id": "cust_3264",
+    "customer_history": {
+      "prior_successful_payments": 24,
+      "prior_failures": 6,
+      "account_age_days": 1004,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00094",
+    "timestamp": "2026-08-09T22:46:57",
+    "amount": 499.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_4838",
+    "customer_history": {
+      "prior_successful_payments": 1,
+      "prior_failures": 6,
+      "account_age_days": 1363,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00095",
+    "timestamp": "2026-08-24T23:51:34",
+    "amount": 228101.15,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "network_error",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_8139",
+    "customer_history": {
+      "prior_successful_payments": 53,
+      "prior_failures": 2,
+      "account_age_days": 1603,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00096",
+    "timestamp": "2026-08-18T03:28:49",
+    "amount": 9351.28,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "one_time",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_1592",
+    "customer_history": {
+      "prior_successful_payments": 57,
+      "prior_failures": 5,
+      "account_age_days": 1338,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00097",
+    "timestamp": "2026-08-09T15:54:22",
+    "amount": 11012.16,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_4836",
+    "customer_history": {
+      "prior_successful_payments": 20,
+      "prior_failures": 5,
+      "account_age_days": 865,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00098",
+    "timestamp": "2026-08-09T14:44:43",
+    "amount": 499.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_4211",
+    "customer_history": {
+      "prior_successful_payments": 3,
+      "prior_failures": 3,
+      "account_age_days": 52,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 4
+    },
+    "retry_count_so_far": 2
+  },
+  {
+    "transaction_id": "txn_00099",
+    "timestamp": "2026-08-23T17:16:12",
+    "amount": 2197.28,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "wrong_cvv",
+    "instrument_status": "ok",
+    "customer_id": "cust_3697",
+    "customer_history": {
+      "prior_successful_payments": 55,
+      "prior_failures": 5,
+      "account_age_days": 1498,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00100",
+    "timestamp": "2026-07-31T07:41:02",
+    "amount": 94614.89,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_0229",
+    "customer_history": {
+      "prior_successful_payments": 16,
+      "prior_failures": 4,
+      "account_age_days": 268,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00101",
+    "timestamp": "2026-07-29T23:56:18",
+    "amount": 999.0,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "subscription",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_1776",
+    "customer_history": {
+      "prior_successful_payments": 9,
+      "prior_failures": 7,
+      "account_age_days": 171,
+      "recent_failures_same_reason": 5,
+      "recent_failure_window_days": 11
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00102",
+    "timestamp": "2026-08-24T07:20:49",
+    "amount": 1499.0,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "subscription",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_6690",
+    "customer_history": {
+      "prior_successful_payments": 7,
+      "prior_failures": 1,
+      "account_age_days": 107,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00103",
+    "timestamp": "2026-08-22T15:45:48",
+    "amount": 3598.52,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_6368",
+    "customer_history": {
+      "prior_successful_payments": 29,
+      "prior_failures": 2,
+      "account_age_days": 1388,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00104",
+    "timestamp": "2026-07-29T20:41:57",
+    "amount": 199.0,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "subscription",
+    "failure_reason": "issuer_declined_fraud_suspected",
+    "instrument_status": "ok",
+    "customer_id": "cust_1623",
+    "customer_history": {
+      "prior_successful_payments": 95,
+      "prior_failures": 1,
+      "account_age_days": 2210,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00105",
+    "timestamp": "2026-08-13T19:04:45",
+    "amount": 99.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_6071",
+    "customer_history": {
+      "prior_successful_payments": 13,
+      "prior_failures": 3,
+      "account_age_days": 925,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00106",
+    "timestamp": "2026-08-22T13:14:37",
+    "amount": 799.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_8921",
+    "customer_history": {
+      "prior_successful_payments": 57,
+      "prior_failures": 5,
+      "account_age_days": 749,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00107",
+    "timestamp": "2026-08-05T07:12:58",
+    "amount": 27459.99,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "invalid_otp",
+    "instrument_status": "ok",
+    "customer_id": "cust_9784",
+    "customer_history": {
+      "prior_successful_payments": 1,
+      "prior_failures": 0,
+      "account_age_days": 1626,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 2
+  },
+  {
+    "transaction_id": "txn_00108",
+    "timestamp": "2026-08-17T09:55:06",
+    "amount": 149.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "card_expired",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_9081",
+    "customer_history": {
+      "prior_successful_payments": 13,
+      "prior_failures": 4,
+      "account_age_days": 457,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00109",
+    "timestamp": "2026-07-29T10:37:52",
+    "amount": 142.25,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "one_time",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_2371",
+    "customer_history": {
+      "prior_successful_payments": 8,
+      "prior_failures": 4,
+      "account_age_days": 528,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00110",
+    "timestamp": "2026-08-20T23:26:18",
+    "amount": 8640.78,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "invalid_otp",
+    "instrument_status": "ok",
+    "customer_id": "cust_9648",
+    "customer_history": {
+      "prior_successful_payments": 20,
+      "prior_failures": 0,
+      "account_age_days": 371,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00111",
+    "timestamp": "2026-08-21T20:35:21",
+    "amount": 11210.41,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "one_time",
+    "failure_reason": "issuer_declined_fraud_suspected",
+    "instrument_status": "ok",
+    "customer_id": "cust_7345",
+    "customer_history": {
+      "prior_successful_payments": 91,
+      "prior_failures": 1,
+      "account_age_days": 2001,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00112",
+    "timestamp": "2026-08-16T14:52:33",
+    "amount": 14186.69,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "card_expired",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_0711",
+    "customer_history": {
+      "prior_successful_payments": 46,
+      "prior_failures": 6,
+      "account_age_days": 1790,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00113",
+    "timestamp": "2026-08-25T20:42:25",
+    "amount": 99.0,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "subscription",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_6581",
+    "customer_history": {
+      "prior_successful_payments": 27,
+      "prior_failures": 5,
+      "account_age_days": 236,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 2
+  },
+  {
+    "transaction_id": "txn_00114",
+    "timestamp": "2026-08-23T10:52:21",
+    "amount": 4899.47,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "one_time",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_1077",
+    "customer_history": {
+      "prior_successful_payments": 8,
+      "prior_failures": 2,
+      "account_age_days": 1293,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00115",
+    "timestamp": "2026-07-29T08:59:17",
+    "amount": 8005.3,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_8283",
+    "customer_history": {
+      "prior_successful_payments": 15,
+      "prior_failures": 4,
+      "account_age_days": 354,
+      "recent_failures_same_reason": 5,
+      "recent_failure_window_days": 12
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00116",
+    "timestamp": "2026-08-16T22:28:48",
+    "amount": 999.0,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "subscription",
+    "failure_reason": "invalid_otp",
+    "instrument_status": "ok",
+    "customer_id": "cust_3744",
+    "customer_history": {
+      "prior_successful_payments": 26,
+      "prior_failures": 2,
+      "account_age_days": 1709,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00117",
+    "timestamp": "2026-08-06T15:47:03",
+    "amount": 4756.6,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "card_reported_stolen",
+    "instrument_status": "card_reported_stolen",
+    "customer_id": "cust_4177",
+    "customer_history": {
+      "prior_successful_payments": 23,
+      "prior_failures": 1,
+      "account_age_days": 1421,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00118",
+    "timestamp": "2026-08-22T20:22:45",
+    "amount": 110809.75,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "invalid_otp",
+    "instrument_status": "ok",
+    "customer_id": "cust_2132",
+    "customer_history": {
+      "prior_successful_payments": 35,
+      "prior_failures": 0,
+      "account_age_days": 1216,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00119",
+    "timestamp": "2026-08-07T10:22:24",
+    "amount": 799.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "card_expired",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_6930",
+    "customer_history": {
+      "prior_successful_payments": 55,
+      "prior_failures": 5,
+      "account_age_days": 120,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00120",
+    "timestamp": "2026-07-30T07:40:35",
+    "amount": 7660.45,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_7901",
+    "customer_history": {
+      "prior_successful_payments": 14,
+      "prior_failures": 6,
+      "account_age_days": 236,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00121",
+    "timestamp": "2026-08-13T20:26:41",
+    "amount": 8654.09,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "one_time",
+    "failure_reason": "network_error",
+    "instrument_status": "ok",
+    "customer_id": "cust_9191",
+    "customer_history": {
+      "prior_successful_payments": 49,
+      "prior_failures": 6,
+      "account_age_days": 1288,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00122",
+    "timestamp": "2026-08-14T09:24:03",
+    "amount": 531.4,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "one_time",
+    "failure_reason": "network_error",
+    "instrument_status": "ok",
+    "customer_id": "cust_5063",
+    "customer_history": {
+      "prior_successful_payments": 58,
+      "prior_failures": 2,
+      "account_age_days": 733,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00123",
+    "timestamp": "2026-08-07T22:03:09",
+    "amount": 149.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_0503",
+    "customer_history": {
+      "prior_successful_payments": 5,
+      "prior_failures": 5,
+      "account_age_days": 1101,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00124",
+    "timestamp": "2026-08-09T09:51:25",
+    "amount": 4743.4,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "one_time",
+    "failure_reason": "network_error",
+    "instrument_status": "ok",
+    "customer_id": "cust_9300",
+    "customer_history": {
+      "prior_successful_payments": 38,
+      "prior_failures": 0,
+      "account_age_days": 122,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00125",
+    "timestamp": "2026-08-23T09:57:03",
+    "amount": 4154.33,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_7958",
+    "customer_history": {
+      "prior_successful_payments": 16,
+      "prior_failures": 7,
+      "account_age_days": 679,
+      "recent_failures_same_reason": 3,
+      "recent_failure_window_days": 11
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00126",
+    "timestamp": "2026-08-13T14:59:39",
+    "amount": 10205.45,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "card_expired",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_9718",
+    "customer_history": {
+      "prior_successful_payments": 31,
+      "prior_failures": 4,
+      "account_age_days": 1381,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00127",
+    "timestamp": "2026-08-24T17:10:28",
+    "amount": 6883.34,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "network_error",
+    "instrument_status": "ok",
+    "customer_id": "cust_3461",
+    "customer_history": {
+      "prior_successful_payments": 49,
+      "prior_failures": 1,
+      "account_age_days": 1580,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00128",
+    "timestamp": "2026-08-06T11:15:02",
+    "amount": 2717.85,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "one_time",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_8726",
+    "customer_history": {
+      "prior_successful_payments": 45,
+      "prior_failures": 1,
+      "account_age_days": 1039,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00129",
+    "timestamp": "2026-08-08T02:22:43",
+    "amount": 12940.29,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_7148",
+    "customer_history": {
+      "prior_successful_payments": 1,
+      "prior_failures": 3,
+      "account_age_days": 174,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00130",
+    "timestamp": "2026-07-30T12:56:28",
+    "amount": 999.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_6844",
+    "customer_history": {
+      "prior_successful_payments": 18,
+      "prior_failures": 0,
+      "account_age_days": 844,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00131",
+    "timestamp": "2026-08-05T00:56:54",
+    "amount": 799.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_1444",
+    "customer_history": {
+      "prior_successful_payments": 27,
+      "prior_failures": 6,
+      "account_age_days": 231,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00132",
+    "timestamp": "2026-08-08T03:53:55",
+    "amount": 499.0,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "subscription",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_3631",
+    "customer_history": {
+      "prior_successful_payments": 21,
+      "prior_failures": 6,
+      "account_age_days": 359,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00133",
+    "timestamp": "2026-08-01T14:48:03",
+    "amount": 299.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_5725",
+    "customer_history": {
+      "prior_successful_payments": 22,
+      "prior_failures": 5,
+      "account_age_days": 1692,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00134",
+    "timestamp": "2026-08-14T22:46:32",
+    "amount": 3039.35,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "wrong_cvv",
+    "instrument_status": "ok",
+    "customer_id": "cust_9870",
+    "customer_history": {
+      "prior_successful_payments": 9,
+      "prior_failures": 6,
+      "account_age_days": 1569,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00135",
+    "timestamp": "2026-08-04T20:27:20",
+    "amount": 189839.23,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_9495",
+    "customer_history": {
+      "prior_successful_payments": 28,
+      "prior_failures": 5,
+      "account_age_days": 1171,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 2
+  },
+  {
+    "transaction_id": "txn_00136",
+    "timestamp": "2026-08-12T00:40:18",
+    "amount": 2349.27,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "network_error",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_1119",
+    "customer_history": {
+      "prior_successful_payments": 30,
+      "prior_failures": 3,
+      "account_age_days": 1308,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00137",
+    "timestamp": "2026-08-02T17:54:35",
+    "amount": 1205.44,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_7405",
+    "customer_history": {
+      "prior_successful_payments": 2,
+      "prior_failures": 0,
+      "account_age_days": 770,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00138",
+    "timestamp": "2026-08-22T23:47:50",
+    "amount": 155677.06,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "issuer_declined_fraud_suspected",
+    "instrument_status": "ok",
+    "customer_id": "cust_7582",
+    "customer_history": {
+      "prior_successful_payments": 79,
+      "prior_failures": 2,
+      "account_age_days": 2571,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00139",
+    "timestamp": "2026-07-30T14:58:19",
+    "amount": 9812.38,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "one_time",
+    "failure_reason": "issuer_declined_fraud_suspected",
+    "instrument_status": "ok",
+    "customer_id": "cust_9913",
+    "customer_history": {
+      "prior_successful_payments": 1,
+      "prior_failures": 1,
+      "account_age_days": 4,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00140",
+    "timestamp": "2026-08-10T16:51:58",
+    "amount": 245684.47,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "network_error",
+    "instrument_status": "ok",
+    "customer_id": "cust_8267",
+    "customer_history": {
+      "prior_successful_payments": 41,
+      "prior_failures": 1,
+      "account_age_days": 95,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00141",
+    "timestamp": "2026-08-01T23:57:16",
+    "amount": 9186.1,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "one_time",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_6109",
+    "customer_history": {
+      "prior_successful_payments": 58,
+      "prior_failures": 2,
+      "account_age_days": 808,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00142",
+    "timestamp": "2026-08-11T03:06:19",
+    "amount": 149.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_5402",
+    "customer_history": {
+      "prior_successful_payments": 6,
+      "prior_failures": 4,
+      "account_age_days": 1404,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00143",
+    "timestamp": "2026-07-29T02:48:10",
+    "amount": 218953.52,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_1336",
+    "customer_history": {
+      "prior_successful_payments": 37,
+      "prior_failures": 5,
+      "account_age_days": 304,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00144",
+    "timestamp": "2026-08-08T08:20:10",
+    "amount": 199.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_5073",
+    "customer_history": {
+      "prior_successful_payments": 35,
+      "prior_failures": 3,
+      "account_age_days": 1332,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00145",
+    "timestamp": "2026-08-01T19:42:27",
+    "amount": 149.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_6938",
+    "customer_history": {
+      "prior_successful_payments": 32,
+      "prior_failures": 2,
+      "account_age_days": 52,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00146",
+    "timestamp": "2026-08-03T18:27:12",
+    "amount": 2960.88,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "one_time",
+    "failure_reason": "network_error",
+    "instrument_status": "ok",
+    "customer_id": "cust_2539",
+    "customer_history": {
+      "prior_successful_payments": 4,
+      "prior_failures": 2,
+      "account_age_days": 1744,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00147",
+    "timestamp": "2026-08-01T19:32:47",
+    "amount": 99.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "card_blocked",
+    "instrument_status": "card_blocked",
+    "customer_id": "cust_5518",
+    "customer_history": {
+      "prior_successful_payments": 56,
+      "prior_failures": 6,
+      "account_age_days": 1280,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00148",
+    "timestamp": "2026-08-19T08:07:59",
+    "amount": 10845.63,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_6732",
+    "customer_history": {
+      "prior_successful_payments": 23,
+      "prior_failures": 5,
+      "account_age_days": 1488,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00149",
+    "timestamp": "2026-08-13T13:02:06",
+    "amount": 1499.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_3834",
+    "customer_history": {
+      "prior_successful_payments": 34,
+      "prior_failures": 1,
+      "account_age_days": 648,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00150",
+    "timestamp": "2026-08-17T22:57:18",
+    "amount": 95121.03,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_7565",
+    "customer_history": {
+      "prior_successful_payments": 49,
+      "prior_failures": 2,
+      "account_age_days": 1608,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00151",
+    "timestamp": "2026-08-17T16:20:08",
+    "amount": 201308.51,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "invalid_otp",
+    "instrument_status": "ok",
+    "customer_id": "cust_4097",
+    "customer_history": {
+      "prior_successful_payments": 3,
+      "prior_failures": 5,
+      "account_age_days": 999,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00152",
+    "timestamp": "2026-08-02T07:55:20",
+    "amount": 12782.37,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "wrong_cvv",
+    "instrument_status": "ok",
+    "customer_id": "cust_4671",
+    "customer_history": {
+      "prior_successful_payments": 5,
+      "prior_failures": 6,
+      "account_age_days": 343,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00153",
+    "timestamp": "2026-08-06T03:18:28",
+    "amount": 1466.53,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_7392",
+    "customer_history": {
+      "prior_successful_payments": 56,
+      "prior_failures": 2,
+      "account_age_days": 69,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00154",
+    "timestamp": "2026-08-08T15:05:02",
+    "amount": 14918.43,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "one_time",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_3679",
+    "customer_history": {
+      "prior_successful_payments": 1,
+      "prior_failures": 2,
+      "account_age_days": 217,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00155",
+    "timestamp": "2026-08-20T16:41:06",
+    "amount": 99.0,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "subscription",
+    "failure_reason": "network_error",
+    "instrument_status": "ok",
+    "customer_id": "cust_7741",
+    "customer_history": {
+      "prior_successful_payments": 44,
+      "prior_failures": 6,
+      "account_age_days": 299,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00156",
+    "timestamp": "2026-07-28T12:04:03",
+    "amount": 99.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_1299",
+    "customer_history": {
+      "prior_successful_payments": 1,
+      "prior_failures": 2,
+      "account_age_days": 456,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00157",
+    "timestamp": "2026-08-01T18:06:06",
+    "amount": 999.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_4721",
+    "customer_history": {
+      "prior_successful_payments": 15,
+      "prior_failures": 2,
+      "account_age_days": 264,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00158",
+    "timestamp": "2026-08-05T04:25:27",
+    "amount": 149.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_1817",
+    "customer_history": {
+      "prior_successful_payments": 53,
+      "prior_failures": 3,
+      "account_age_days": 1237,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00159",
+    "timestamp": "2026-08-20T09:43:16",
+    "amount": 499.0,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "subscription",
+    "failure_reason": "issuer_declined_fraud_suspected",
+    "instrument_status": "ok",
+    "customer_id": "cust_0026",
+    "customer_history": {
+      "prior_successful_payments": 81,
+      "prior_failures": 1,
+      "account_age_days": 1442,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00160",
+    "timestamp": "2026-08-23T05:15:10",
+    "amount": 7899.92,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "one_time",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_1109",
+    "customer_history": {
+      "prior_successful_payments": 0,
+      "prior_failures": 4,
+      "account_age_days": 60,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 3
+    },
+    "retry_count_so_far": 2
+  },
+  {
+    "transaction_id": "txn_00161",
+    "timestamp": "2026-08-09T06:04:17",
+    "amount": 499.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "network_error",
+    "instrument_status": "ok",
+    "customer_id": "cust_5851",
+    "customer_history": {
+      "prior_successful_payments": 50,
+      "prior_failures": 0,
+      "account_age_days": 721,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00162",
+    "timestamp": "2026-07-30T03:02:01",
+    "amount": 11054.29,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "one_time",
+    "failure_reason": "issuer_declined_fraud_suspected",
+    "instrument_status": "ok",
+    "customer_id": "cust_2186",
+    "customer_history": {
+      "prior_successful_payments": 44,
+      "prior_failures": 1,
+      "account_age_days": 2068,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00163",
+    "timestamp": "2026-08-04T19:40:31",
+    "amount": 1499.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_2210",
+    "customer_history": {
+      "prior_successful_payments": 4,
+      "prior_failures": 5,
+      "account_age_days": 1604,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00164",
+    "timestamp": "2026-08-17T16:36:03",
+    "amount": 13298.28,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_5081",
+    "customer_history": {
+      "prior_successful_payments": 18,
+      "prior_failures": 7,
+      "account_age_days": 1232,
+      "recent_failures_same_reason": 4,
+      "recent_failure_window_days": 9
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00165",
+    "timestamp": "2026-08-13T11:39:24",
+    "amount": 799.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "network_error",
+    "instrument_status": "ok",
+    "customer_id": "cust_5439",
+    "customer_history": {
+      "prior_successful_payments": 17,
+      "prior_failures": 0,
+      "account_age_days": 1652,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00166",
+    "timestamp": "2026-08-08T14:31:35",
+    "amount": 799.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "network_error",
+    "instrument_status": "ok",
+    "customer_id": "cust_8130",
+    "customer_history": {
+      "prior_successful_payments": 3,
+      "prior_failures": 3,
+      "account_age_days": 56,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 4
+    },
+    "retry_count_so_far": 2
+  },
+  {
+    "transaction_id": "txn_00167",
+    "timestamp": "2026-08-23T13:02:37",
+    "amount": 999.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_8938",
+    "customer_history": {
+      "prior_successful_payments": 18,
+      "prior_failures": 2,
+      "account_age_days": 225,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00168",
+    "timestamp": "2026-07-29T02:53:42",
+    "amount": 10793.18,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_7273",
+    "customer_history": {
+      "prior_successful_payments": 22,
+      "prior_failures": 3,
+      "account_age_days": 101,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 2
+  },
+  {
+    "transaction_id": "txn_00169",
+    "timestamp": "2026-08-06T06:15:28",
+    "amount": 499.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_1230",
+    "customer_history": {
+      "prior_successful_payments": 42,
+      "prior_failures": 5,
+      "account_age_days": 846,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00170",
+    "timestamp": "2026-08-25T20:43:07",
+    "amount": 199.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_9955",
+    "customer_history": {
+      "prior_successful_payments": 43,
+      "prior_failures": 6,
+      "account_age_days": 912,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00171",
+    "timestamp": "2026-08-09T14:11:48",
+    "amount": 799.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "wrong_cvv",
+    "instrument_status": "ok",
+    "customer_id": "cust_6273",
+    "customer_history": {
+      "prior_successful_payments": 60,
+      "prior_failures": 4,
+      "account_age_days": 81,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00172",
+    "timestamp": "2026-08-09T07:34:23",
+    "amount": 113765.13,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_9404",
+    "customer_history": {
+      "prior_successful_payments": 8,
+      "prior_failures": 4,
+      "account_age_days": 766,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00173",
+    "timestamp": "2026-08-21T20:49:23",
+    "amount": 486.11,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "wrong_cvv",
+    "instrument_status": "ok",
+    "customer_id": "cust_3049",
+    "customer_history": {
+      "prior_successful_payments": 31,
+      "prior_failures": 4,
+      "account_age_days": 807,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00174",
+    "timestamp": "2026-08-05T17:03:15",
+    "amount": 299.0,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "subscription",
+    "failure_reason": "network_error",
+    "instrument_status": "ok",
+    "customer_id": "cust_8048",
+    "customer_history": {
+      "prior_successful_payments": 1,
+      "prior_failures": 1,
+      "account_age_days": 13,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 10
+    },
+    "retry_count_so_far": 2
+  },
+  {
+    "transaction_id": "txn_00175",
+    "timestamp": "2026-08-05T18:24:29",
+    "amount": 14959.21,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_5693",
+    "customer_history": {
+      "prior_successful_payments": 4,
+      "prior_failures": 8,
+      "account_age_days": 1230,
+      "recent_failures_same_reason": 4,
+      "recent_failure_window_days": 9
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00176",
+    "timestamp": "2026-08-18T22:10:10",
+    "amount": 799.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_1989",
+    "customer_history": {
+      "prior_successful_payments": 12,
+      "prior_failures": 6,
+      "account_age_days": 299,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00177",
+    "timestamp": "2026-07-30T14:14:55",
+    "amount": 5596.78,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "card_blocked",
+    "instrument_status": "card_blocked",
+    "customer_id": "cust_9039",
+    "customer_history": {
+      "prior_successful_payments": 8,
+      "prior_failures": 4,
+      "account_age_days": 191,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00178",
+    "timestamp": "2026-08-01T20:31:13",
+    "amount": 105644.8,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "expired_mandate",
+    "instrument_status": "mandate_expired",
+    "customer_id": "cust_6709",
+    "customer_history": {
+      "prior_successful_payments": 52,
+      "prior_failures": 4,
+      "account_age_days": 166,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00179",
+    "timestamp": "2026-08-04T18:15:54",
+    "amount": 10233.62,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_5645",
+    "customer_history": {
+      "prior_successful_payments": 8,
+      "prior_failures": 6,
+      "account_age_days": 1612,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00180",
+    "timestamp": "2026-08-21T02:39:57",
+    "amount": 999.0,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "subscription",
+    "failure_reason": "card_expired",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_8239",
+    "customer_history": {
+      "prior_successful_payments": 58,
+      "prior_failures": 6,
+      "account_age_days": 128,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00181",
+    "timestamp": "2026-08-19T12:17:42",
+    "amount": 4907.65,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "one_time",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_5670",
+    "customer_history": {
+      "prior_successful_payments": 60,
+      "prior_failures": 4,
+      "account_age_days": 596,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00182",
+    "timestamp": "2026-07-31T15:13:24",
+    "amount": 499.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_4962",
+    "customer_history": {
+      "prior_successful_payments": 39,
+      "prior_failures": 4,
+      "account_age_days": 206,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00183",
+    "timestamp": "2026-08-19T21:21:03",
+    "amount": 46944.15,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_9235",
+    "customer_history": {
+      "prior_successful_payments": 2,
+      "prior_failures": 6,
+      "account_age_days": 1784,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00184",
+    "timestamp": "2026-07-30T09:00:47",
+    "amount": 499.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_9374",
+    "customer_history": {
+      "prior_successful_payments": 26,
+      "prior_failures": 4,
+      "account_age_days": 1323,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  },
+  {
+    "transaction_id": "txn_00185",
+    "timestamp": "2026-08-12T17:02:06",
+    "amount": 1499.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_6654",
+    "customer_history": {
+      "prior_successful_payments": 19,
+      "prior_failures": 3,
+      "account_age_days": 164,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00186",
+    "timestamp": "2026-08-04T19:53:09",
+    "amount": 3139.94,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "wrong_cvv",
+    "instrument_status": "ok",
+    "customer_id": "cust_9940",
+    "customer_history": {
+      "prior_successful_payments": 9,
+      "prior_failures": 2,
+      "account_age_days": 1779,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00187",
+    "timestamp": "2026-08-08T00:27:42",
+    "amount": 37037.71,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "network_error",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_6071",
+    "customer_history": {
+      "prior_successful_payments": 32,
+      "prior_failures": 4,
+      "account_age_days": 232,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00188",
+    "timestamp": "2026-08-15T08:09:13",
+    "amount": 2199.08,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_4755",
+    "customer_history": {
+      "prior_successful_payments": 60,
+      "prior_failures": 3,
+      "account_age_days": 1784,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00189",
+    "timestamp": "2026-08-19T14:56:12",
+    "amount": 204302.07,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "invalid_otp",
+    "instrument_status": "ok",
+    "customer_id": "cust_3111",
+    "customer_history": {
+      "prior_successful_payments": 48,
+      "prior_failures": 1,
+      "account_age_days": 1035,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00190",
+    "timestamp": "2026-08-03T05:31:18",
+    "amount": 10678.19,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_8282",
+    "customer_history": {
+      "prior_successful_payments": 16,
+      "prior_failures": 5,
+      "account_age_days": 560,
+      "recent_failures_same_reason": 5,
+      "recent_failure_window_days": 9
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00191",
+    "timestamp": "2026-07-29T08:50:25",
+    "amount": 13246.86,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "one_time",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_4682",
+    "customer_history": {
+      "prior_successful_payments": 34,
+      "prior_failures": 0,
+      "account_age_days": 1750,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00192",
+    "timestamp": "2026-08-09T14:50:18",
+    "amount": 11481.47,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "one_time",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_0742",
+    "customer_history": {
+      "prior_successful_payments": 3,
+      "prior_failures": 1,
+      "account_age_days": 41,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 8
+    },
+    "retry_count_so_far": 2
+  },
+  {
+    "transaction_id": "txn_00193",
+    "timestamp": "2026-08-23T19:19:46",
+    "amount": 999.0,
+    "currency": "INR",
+    "payment_method": "wallet",
+    "transaction_type": "subscription",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_9009",
+    "customer_history": {
+      "prior_successful_payments": 17,
+      "prior_failures": 6,
+      "account_age_days": 1291,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00194",
+    "timestamp": "2026-08-08T06:04:09",
+    "amount": 96433.59,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_9140",
+    "customer_history": {
+      "prior_successful_payments": 60,
+      "prior_failures": 2,
+      "account_age_days": 1561,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00195",
+    "timestamp": "2026-08-25T10:05:59",
+    "amount": 775.02,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "one_time",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_5457",
+    "customer_history": {
+      "prior_successful_payments": 51,
+      "prior_failures": 3,
+      "account_age_days": 1078,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00196",
+    "timestamp": "2026-08-11T10:53:32",
+    "amount": 799.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "bank_timeout",
+    "instrument_status": "ok",
+    "customer_id": "cust_6439",
+    "customer_history": {
+      "prior_successful_payments": 39,
+      "prior_failures": 5,
+      "account_age_days": 1740,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00197",
+    "timestamp": "2026-08-01T12:46:45",
+    "amount": 125012.43,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "b2b_invoice",
+    "failure_reason": "network_error",
+    "instrument_status": "ok",
+    "customer_id": "cust_7781",
+    "customer_history": {
+      "prior_successful_payments": 0,
+      "prior_failures": 3,
+      "account_age_days": 26,
+      "recent_failures_same_reason": 1,
+      "recent_failure_window_days": 9
+    },
+    "retry_count_so_far": 2
+  },
+  {
+    "transaction_id": "txn_00198",
+    "timestamp": "2026-08-26T01:57:14",
+    "amount": 1499.0,
+    "currency": "INR",
+    "payment_method": "netbanking",
+    "transaction_type": "subscription",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_9478",
+    "customer_history": {
+      "prior_successful_payments": 36,
+      "prior_failures": 1,
+      "account_age_days": 1492,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00199",
+    "timestamp": "2026-08-08T22:02:47",
+    "amount": 199.0,
+    "currency": "INR",
+    "payment_method": "upi",
+    "transaction_type": "subscription",
+    "failure_reason": "insufficient_funds",
+    "instrument_status": "ok",
+    "customer_id": "cust_0518",
+    "customer_history": {
+      "prior_successful_payments": 36,
+      "prior_failures": 5,
+      "account_age_days": 240,
+      "recent_failures_same_reason": 0,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 0
+  },
+  {
+    "transaction_id": "txn_00200",
+    "timestamp": "2026-08-07T07:52:00",
+    "amount": 10388.45,
+    "currency": "INR",
+    "payment_method": "card",
+    "transaction_type": "one_time",
+    "failure_reason": "network_error",
+    "instrument_status": "card_expired",
+    "customer_id": "cust_6724",
+    "customer_history": {
+      "prior_successful_payments": 32,
+      "prior_failures": 6,
+      "account_age_days": 1267,
+      "recent_failures_same_reason": 2,
+      "recent_failure_window_days": 14
+    },
+    "retry_count_so_far": 1
+  }
+]

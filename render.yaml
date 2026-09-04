@@ -1,0 +1,23 @@
+# Render.com blueprint. Push this repo to GitHub, then in Render:
+#   New  ->  Blueprint  ->  pick this repo.
+# Set the secret env vars (marked sync:false) in the Render dashboard afterwards.
+services:
+  - type: web
+    name: payment-failure-recovery-agent
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn web.app:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11"
+      - key: RECOVERY_AGENT_BACKEND
+        value: auto            # uses ANTHROPIC_API_KEY if set, else the offline heuristic
+      - key: ANTHROPIC_API_KEY
+        sync: false            # optional: set for real LLM reasoning in the live demo
+      - key: CLASSIFIER_MODEL
+        value: claude-sonnet-5
+      - key: RAZORPAY_KEY_ID
+        sync: false            # rzp_test_...
+      - key: RAZORPAY_KEY_SECRET
+        sync: false

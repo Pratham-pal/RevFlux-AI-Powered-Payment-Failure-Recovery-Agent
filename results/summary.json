@@ -1,0 +1,207 @@
+{
+  "run": {
+    "timestamp": "2026-08-27T12:03:21",
+    "classifier_backend": "offline",
+    "classifier_model": "offline-heuristic",
+    "records": 200,
+    "max_retry_attempts": 3,
+    "cooldown_hours": 4
+  },
+  "headline": {
+    "recovery_rate": 0.715,
+    "recovered_count": 143,
+    "total_count": 200,
+    "amount_at_risk_inr": 6246101.13,
+    "amount_recovered_inr": 4910757.67,
+    "value_recovery_rate": 0.7862
+  },
+  "outcomes": {
+    "recovered": 143,
+    "still_failed": 21,
+    "escalated": 19,
+    "no_action_taken": 17
+  },
+  "recovery_by_failure_reason": {
+    "bank_timeout": {
+      "total": 38,
+      "recovered": 30,
+      "recovery_rate": 0.7895,
+      "amount_at_risk": 1201437.41,
+      "amount_recovered": 968808.25
+    },
+    "card_blocked": {
+      "total": 4,
+      "recovered": 0,
+      "recovery_rate": 0.0,
+      "amount_at_risk": 135256.11,
+      "amount_recovered": 0.0
+    },
+    "card_expired": {
+      "total": 12,
+      "recovered": 3,
+      "recovery_rate": 0.25,
+      "amount_at_risk": 210466.6,
+      "amount_recovered": 15984.69
+    },
+    "card_reported_stolen": {
+      "total": 2,
+      "recovered": 0,
+      "recovery_rate": 0.0,
+      "amount_at_risk": 5255.6,
+      "amount_recovered": 0.0
+    },
+    "expired_mandate": {
+      "total": 22,
+      "recovered": 15,
+      "recovery_rate": 0.6818,
+      "amount_at_risk": 662693.52,
+      "amount_recovered": 536130.0
+    },
+    "insufficient_funds": {
+      "total": 60,
+      "recovered": 56,
+      "recovery_rate": 0.9333,
+      "amount_at_risk": 1454818.85,
+      "amount_recovered": 1447824.56
+    },
+    "invalid_otp": {
+      "total": 10,
+      "recovered": 6,
+      "recovery_rate": 0.6,
+      "amount_at_risk": 722091.78,
+      "amount_recovered": 478134.61
+    },
+    "issuer_declined_fraud_suspected": {
+      "total": 11,
+      "recovered": 0,
+      "recovery_rate": 0.0,
+      "amount_at_risk": 367398.96,
+      "amount_recovered": 0.0
+    },
+    "network_error": {
+      "total": 28,
+      "recovered": 28,
+      "recovery_rate": 1.0,
+      "amount_at_risk": 1429461.52,
+      "amount_recovered": 1429461.52
+    },
+    "wrong_cvv": {
+      "total": 13,
+      "recovered": 5,
+      "recovery_rate": 0.3846,
+      "amount_at_risk": 57220.78,
+      "amount_recovered": 34414.04
+    }
+  },
+  "recovery_by_category": {
+    "hard_decline": {
+      "total": 17,
+      "recovered": 0,
+      "recovery_rate": 0.0
+    },
+    "needs_customer_action": {
+      "total": 35,
+      "recovered": 14,
+      "recovery_rate": 0.4
+    },
+    "needs_reauth": {
+      "total": 22,
+      "recovered": 15,
+      "recovery_rate": 0.6818
+    },
+    "soft_recoverable": {
+      "total": 126,
+      "recovered": 114,
+      "recovery_rate": 0.9048
+    }
+  },
+  "hard_decline_restraint": {
+    "ground_truth_leave_alone": 9,
+    "correctly_left_alone": 9,
+    "hard_declines_retried": 0,
+    "restraint_rate": 1.0
+  },
+  "false_positive_cost": {
+    "transactions_with_wasted_retries": 36,
+    "wasted_retry_attempts": 46,
+    "cost_per_wasted_retry_inr": 7.0,
+    "estimated_cost_inr": 322.0,
+    "wasted_transaction_ids": [
+      "txn_00002",
+      "txn_00004",
+      "txn_00012",
+      "txn_00015",
+      "txn_00016",
+      "txn_00021",
+      "txn_00025",
+      "txn_00026",
+      "txn_00035",
+      "txn_00040",
+      "txn_00041",
+      "txn_00045",
+      "txn_00057",
+      "txn_00058",
+      "txn_00063",
+      "txn_00075",
+      "txn_00090",
+      "txn_00095",
+      "txn_00098",
+      "txn_00101",
+      "txn_00115",
+      "txn_00125",
+      "txn_00136",
+      "txn_00142",
+      "txn_00160",
+      "txn_00164",
+      "txn_00166",
+      "txn_00170",
+      "txn_00174",
+      "txn_00175",
+      "txn_00179",
+      "txn_00187",
+      "txn_00190",
+      "txn_00192",
+      "txn_00197",
+      "txn_00200"
+    ]
+  },
+  "decision_to_retry": {
+    "true_positive": 90,
+    "false_positive": 36,
+    "false_negative": 0,
+    "true_negative": 74,
+    "precision": 0.7143,
+    "recall": 1.0,
+    "f1": 0.8333
+  },
+  "best_action_agreement": {
+    "match": 150,
+    "total": 200,
+    "rate": 0.75
+  },
+  "classifier_quality": {
+    "category_accuracy_llm": 0.75,
+    "category_accuracy_heuristic": 0.75,
+    "lift": 0.0,
+    "twist_records": 50,
+    "twist_accuracy_llm": 0.0,
+    "twist_accuracy_heuristic": 0.0,
+    "clean_accuracy_llm": 1.0,
+    "clean_accuracy_heuristic": 1.0,
+    "llm_heuristic_disagreements": 0,
+    "disagreement_rate": 0.0
+  },
+  "classification_sources": {
+    "fallback": 200
+  },
+  "guardrail_activity": {
+    "route:soft_recoverable": 126,
+    "cooldown:4h_floor": 126,
+    "route:needs_reauth": 22,
+    "route:needs_customer_action": 35,
+    "timing:salary_credit_window": 60,
+    "followup:reauth_not_completed": 7,
+    "guardrail:retry_cap_reached": 12,
+    "guardrail:hard_decline_denylist": 17
+  }
+}

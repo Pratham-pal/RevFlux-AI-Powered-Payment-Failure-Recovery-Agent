@@ -1,0 +1,1402 @@
+{
+  "txn_00001": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00002": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_not_transient",
+    "twist": "twist_not_transient"
+  },
+  "txn_00003": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "request_mandate_reauth",
+    "ground_truth_category": "needs_reauth",
+    "gt_rule": "base_needs_reauth",
+    "twist": null
+  },
+  "txn_00004": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_not_transient",
+    "twist": "twist_not_transient"
+  },
+  "txn_00005": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00006": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00007": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00008": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00009": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00010": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00011": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00012": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_chronic_if",
+    "twist": "twist_chronic_if"
+  },
+  "txn_00013": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00014": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00015": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "twist_expired_instrument",
+    "twist": "twist_expired_instrument"
+  },
+  "txn_00016": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_chronic_if",
+    "twist": "twist_chronic_if"
+  },
+  "txn_00017": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00018": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00019": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00020": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00021": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "twist_expired_instrument",
+    "twist": "twist_expired_instrument"
+  },
+  "txn_00022": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00023": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00024": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00025": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_not_transient",
+    "twist": "twist_not_transient"
+  },
+  "txn_00026": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "twist_expired_instrument",
+    "twist": "twist_expired_instrument"
+  },
+  "txn_00027": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00028": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00029": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00030": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_reason_type_mismatch",
+    "twist": "twist_reason_type_mismatch"
+  },
+  "txn_00031": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00032": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00033": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00034": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00035": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "twist_expired_instrument",
+    "twist": "twist_expired_instrument"
+  },
+  "txn_00036": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00037": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00038": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_reason_type_mismatch",
+    "twist": "twist_reason_type_mismatch"
+  },
+  "txn_00039": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00040": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_chronic_if",
+    "twist": "twist_chronic_if"
+  },
+  "txn_00041": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_chronic_if",
+    "twist": "twist_chronic_if"
+  },
+  "txn_00042": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00043": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00044": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "no_action",
+    "ground_truth_category": "hard_decline",
+    "gt_rule": "base_hard_decline",
+    "twist": null
+  },
+  "txn_00045": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "twist_expired_instrument",
+    "twist": "twist_expired_instrument"
+  },
+  "txn_00046": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00047": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00048": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00049": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00050": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00051": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "request_mandate_reauth",
+    "ground_truth_category": "needs_reauth",
+    "gt_rule": "base_needs_reauth",
+    "twist": null
+  },
+  "txn_00052": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "request_mandate_reauth",
+    "ground_truth_category": "needs_reauth",
+    "gt_rule": "base_needs_reauth",
+    "twist": null
+  },
+  "txn_00053": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "request_mandate_reauth",
+    "ground_truth_category": "needs_reauth",
+    "gt_rule": "base_needs_reauth",
+    "twist": null
+  },
+  "txn_00054": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "no_action",
+    "ground_truth_category": "hard_decline",
+    "gt_rule": "base_hard_decline",
+    "twist": null
+  },
+  "txn_00055": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00056": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00057": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "twist_expired_instrument",
+    "twist": "twist_expired_instrument"
+  },
+  "txn_00058": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_not_transient",
+    "twist": "twist_not_transient"
+  },
+  "txn_00059": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00060": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00061": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "request_mandate_reauth",
+    "ground_truth_category": "needs_reauth",
+    "gt_rule": "base_needs_reauth",
+    "twist": null
+  },
+  "txn_00062": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00063": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "twist_expired_instrument",
+    "twist": "twist_expired_instrument"
+  },
+  "txn_00064": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_false_fraud",
+    "twist": "twist_false_fraud"
+  },
+  "txn_00065": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00066": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00067": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00068": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00069": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00070": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_false_fraud",
+    "twist": "twist_false_fraud"
+  },
+  "txn_00071": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "no_action",
+    "ground_truth_category": "hard_decline",
+    "gt_rule": "base_hard_decline",
+    "twist": null
+  },
+  "txn_00072": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_false_fraud",
+    "twist": "twist_false_fraud"
+  },
+  "txn_00073": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00074": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00075": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_chronic_if",
+    "twist": "twist_chronic_if"
+  },
+  "txn_00076": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00077": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "request_mandate_reauth",
+    "ground_truth_category": "needs_reauth",
+    "gt_rule": "base_needs_reauth",
+    "twist": null
+  },
+  "txn_00078": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00079": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00080": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_reason_type_mismatch",
+    "twist": "twist_reason_type_mismatch"
+  },
+  "txn_00081": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00082": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00083": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00084": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00085": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "no_action",
+    "ground_truth_category": "hard_decline",
+    "gt_rule": "base_hard_decline",
+    "twist": null
+  },
+  "txn_00086": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00087": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00088": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00089": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00090": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_chronic_if",
+    "twist": "twist_chronic_if"
+  },
+  "txn_00091": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00092": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00093": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "no_action",
+    "ground_truth_category": "hard_decline",
+    "gt_rule": "base_hard_decline",
+    "twist": null
+  },
+  "txn_00094": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "request_mandate_reauth",
+    "ground_truth_category": "needs_reauth",
+    "gt_rule": "base_needs_reauth",
+    "twist": null
+  },
+  "txn_00095": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "twist_expired_instrument",
+    "twist": "twist_expired_instrument"
+  },
+  "txn_00096": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00097": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00098": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_not_transient",
+    "twist": "twist_not_transient"
+  },
+  "txn_00099": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00100": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00101": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_chronic_if",
+    "twist": "twist_chronic_if"
+  },
+  "txn_00102": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00103": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00104": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_false_fraud",
+    "twist": "twist_false_fraud"
+  },
+  "txn_00105": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "request_mandate_reauth",
+    "ground_truth_category": "needs_reauth",
+    "gt_rule": "base_needs_reauth",
+    "twist": null
+  },
+  "txn_00106": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "request_mandate_reauth",
+    "ground_truth_category": "needs_reauth",
+    "gt_rule": "base_needs_reauth",
+    "twist": null
+  },
+  "txn_00107": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00108": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00109": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_reason_type_mismatch",
+    "twist": "twist_reason_type_mismatch"
+  },
+  "txn_00110": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00111": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_false_fraud",
+    "twist": "twist_false_fraud"
+  },
+  "txn_00112": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00113": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00114": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00115": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_chronic_if",
+    "twist": "twist_chronic_if"
+  },
+  "txn_00116": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00117": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "no_action",
+    "ground_truth_category": "hard_decline",
+    "gt_rule": "base_hard_decline",
+    "twist": null
+  },
+  "txn_00118": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00119": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00120": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00121": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00122": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00123": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00124": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00125": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_chronic_if",
+    "twist": "twist_chronic_if"
+  },
+  "txn_00126": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00127": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00128": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00129": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00130": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "request_mandate_reauth",
+    "ground_truth_category": "needs_reauth",
+    "gt_rule": "base_needs_reauth",
+    "twist": null
+  },
+  "txn_00131": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "request_mandate_reauth",
+    "ground_truth_category": "needs_reauth",
+    "gt_rule": "base_needs_reauth",
+    "twist": null
+  },
+  "txn_00132": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00133": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "request_mandate_reauth",
+    "ground_truth_category": "needs_reauth",
+    "gt_rule": "base_needs_reauth",
+    "twist": null
+  },
+  "txn_00134": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00135": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_reason_type_mismatch",
+    "twist": "twist_reason_type_mismatch"
+  },
+  "txn_00136": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "twist_expired_instrument",
+    "twist": "twist_expired_instrument"
+  },
+  "txn_00137": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00138": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_false_fraud",
+    "twist": "twist_false_fraud"
+  },
+  "txn_00139": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "no_action",
+    "ground_truth_category": "hard_decline",
+    "gt_rule": "base_hard_decline",
+    "twist": null
+  },
+  "txn_00140": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00141": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00142": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "twist_expired_instrument",
+    "twist": "twist_expired_instrument"
+  },
+  "txn_00143": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00144": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00145": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "request_mandate_reauth",
+    "ground_truth_category": "needs_reauth",
+    "gt_rule": "base_needs_reauth",
+    "twist": null
+  },
+  "txn_00146": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00147": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "no_action",
+    "ground_truth_category": "hard_decline",
+    "gt_rule": "base_hard_decline",
+    "twist": null
+  },
+  "txn_00148": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00149": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "request_mandate_reauth",
+    "ground_truth_category": "needs_reauth",
+    "gt_rule": "base_needs_reauth",
+    "twist": null
+  },
+  "txn_00150": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00151": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00152": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00153": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00154": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00155": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00156": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "request_mandate_reauth",
+    "ground_truth_category": "needs_reauth",
+    "gt_rule": "base_needs_reauth",
+    "twist": null
+  },
+  "txn_00157": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00158": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "request_mandate_reauth",
+    "ground_truth_category": "needs_reauth",
+    "gt_rule": "base_needs_reauth",
+    "twist": null
+  },
+  "txn_00159": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_false_fraud",
+    "twist": "twist_false_fraud"
+  },
+  "txn_00160": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_not_transient",
+    "twist": "twist_not_transient"
+  },
+  "txn_00161": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00162": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_false_fraud",
+    "twist": "twist_false_fraud"
+  },
+  "txn_00163": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00164": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_chronic_if",
+    "twist": "twist_chronic_if"
+  },
+  "txn_00165": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00166": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_not_transient",
+    "twist": "twist_not_transient"
+  },
+  "txn_00167": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00168": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00169": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00170": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "twist_expired_instrument",
+    "twist": "twist_expired_instrument"
+  },
+  "txn_00171": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00172": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00173": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00174": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_not_transient",
+    "twist": "twist_not_transient"
+  },
+  "txn_00175": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_chronic_if",
+    "twist": "twist_chronic_if"
+  },
+  "txn_00176": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00177": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "no_action",
+    "ground_truth_category": "hard_decline",
+    "gt_rule": "base_hard_decline",
+    "twist": null
+  },
+  "txn_00178": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_reason_type_mismatch",
+    "twist": "twist_reason_type_mismatch"
+  },
+  "txn_00179": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "twist_expired_instrument",
+    "twist": "twist_expired_instrument"
+  },
+  "txn_00180": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00181": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00182": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00183": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00184": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00185": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00186": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00187": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "twist_expired_instrument",
+    "twist": "twist_expired_instrument"
+  },
+  "txn_00188": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00189": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "base_needs_customer_action",
+    "twist": null
+  },
+  "txn_00190": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_chronic_if",
+    "twist": "twist_chronic_if"
+  },
+  "txn_00191": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00192": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_not_transient",
+    "twist": "twist_not_transient"
+  },
+  "txn_00193": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00194": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00195": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00196": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00197": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "escalate_manual_review",
+    "ground_truth_category": "needs_review",
+    "gt_rule": "twist_not_transient",
+    "twist": "twist_not_transient"
+  },
+  "txn_00198": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00199": {
+    "ground_truth_recoverable": true,
+    "ground_truth_best_action": "smart_retry",
+    "ground_truth_category": "soft_recoverable",
+    "gt_rule": "base_soft_recoverable",
+    "twist": null
+  },
+  "txn_00200": {
+    "ground_truth_recoverable": false,
+    "ground_truth_best_action": "nudge_customer",
+    "ground_truth_category": "needs_customer_action",
+    "gt_rule": "twist_expired_instrument",
+    "twist": "twist_expired_instrument"
+  }
+}
